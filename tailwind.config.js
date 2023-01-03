@@ -14,10 +14,16 @@ module.exports = {
         mainOrange: 'hsl(39, 95%, 54%)',
         grayishBlue: 'hsl(229, 8%, 60%)',
         veryDarkBlue: 'hsl(229, 31%, 21%)',
-        darkBg: 'hsl(204, 12%, 8%)'
+        darkBg: 'hsl(204, 12%, 8%)',
+        blurBg: 'rgba(0,0,0,0.6)'
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+      },
+      fontSize: {
+        '4xl': ['41px', {
+          lineHeight: '1.5em',
+        }],
       },
       backgroundImage: () => ({
         dots: "url('../images/bg-dots.svg')",

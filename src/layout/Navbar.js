@@ -2,7 +2,7 @@ import Logo from '../assets/images/logo.png';
 
 const Navbar = () => {
     return (
-        <nav className="container relative mx-auto">
+        <nav className="container relative mx-auto px-16 py-6">
             <div className="flex items-center justify-between my-6">
                 <div className="z-30">
                     <img src={Logo} alt="WeDeliver" id="logo" className="w-32"/>
@@ -11,15 +11,17 @@ const Navbar = () => {
                 <div
                     className="hidden items-center space-x-10 font-semibold text-grayishBlue md:flex"
                 >
-                    <a href="#features" className="hover:text-white"
+                    <a href="#features" className="hover:text-white transition ease-in duration-200"
                     >Home</a
                     >
-                    <a href="#download" className="hover:text-white"
+                    <a href="#download" className="hover:text-white transition ease-in duration-200"
                     >Captains</a
                     >
-                    <a href="#faq" className="hover:text-white">Enterprise</a>
+                    <a href="#faq" className="hover:text-white transition ease-in duration-200">Enterprise</a>
 
-                    <a href="#imp" className="hover:text-white">Impact</a>
+                    <a href="#imp" className="hover:text-white transition ease-in duration-200">Impact</a>
+                    <a href="#imp" className="hover:text-white transition ease-in duration-200">بالعربي</a>
+
                 </div>
                 <button
                     id="menu-btnp"
