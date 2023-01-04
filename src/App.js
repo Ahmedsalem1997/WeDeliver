@@ -1,8 +1,12 @@
-import HeroSection from "./components/HeroSection";
+import BoxesSection from "./components/Sections/BoxesSection";
+import HeroSection from "./components/Sections/HeroSection";
 
 function App() {
   return (
-    <HeroSection />
+    <>
+      <HeroSection />
+      <BoxesSection />
+    </>
   )
 }
 
