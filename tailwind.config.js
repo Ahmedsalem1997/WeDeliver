@@ -21,6 +21,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       fontSize: {
+        '3xl': '30px',
         '4xl': ['41px', {
           lineHeight: '1.5em',
         }],
@@ -29,6 +30,15 @@ module.exports = {
         dots: "url('../images/bg-dots.svg')",
       }),
     },
+    container: {
+      width: {
+        sm: '540px',
+        md: '720px',
+        lg: '960px',
+        xl: '1140px',
+        '2xl': '1320px',
+      },
+    }
   },
   plugins: [],
 }
