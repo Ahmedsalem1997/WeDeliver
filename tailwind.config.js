@@ -21,6 +21,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       fontSize: {
+          p: '13px',
         '3xl': '30px',
         '4xl': ['41px', {
           lineHeight: '1.5em',

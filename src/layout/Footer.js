@@ -16,25 +16,25 @@ const Footer = () => {
         <div className="text-center lg:text-left lg:w-1/4 px-4">
           <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">Company</h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500">About Us</a>
-            <a href="/" className="text-gray-500">Careers</a>
-            <a href="/" className="text-gray-500">Press</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">About Us</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Careers</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Press</a>
           </div>
         </div>
         <div className="text-center lg:text-left lg:w-1/4 px-4">
           <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">GET HELP</h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500">Contact Us</a>
-            <a href="/" className="text-gray-500">FAQ</a>
-            <a href="/" className="text-gray-500">Chat</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Contact Us</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">FAQ</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Chat</a>
           </div>
         </div>
         <div className="text-center lg:text-left lg:w-1/4 px-4">
           <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">GET STARTED</h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500">Enterprise Signup</a>
-            <a href="/" className="text-gray-500">Captains Signup</a>
-            <a href="/" className="text-gray-500">Earnings Calculator</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Enterprise Signup</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Captains Signup</a>
+            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Earnings Calculator</a>
           </div>
         </div>
       </div>

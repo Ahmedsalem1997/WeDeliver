@@ -16,6 +16,10 @@
     animation: slideBg 8s linear infinite 0s;
     background-image: url('../src/assets/images/P4.png');
   }
+  
+  p {
+    font-size: 15px;
+  }
 
   /* @keyframes slideBg {
     0% {

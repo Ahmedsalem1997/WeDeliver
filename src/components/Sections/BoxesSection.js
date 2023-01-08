@@ -13,7 +13,7 @@ const BoxesSection = () => {
             alt="icon"
           />
           <div>
-            <h2 className="text-xl font-bold text-center lg:text-center lg:text-left lg:text-xl mb-4">
+            <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
               Sign Up
             </h2>
             <p>
