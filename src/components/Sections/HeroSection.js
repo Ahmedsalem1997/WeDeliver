@@ -1,15 +1,15 @@
-import Navbar from './../../layout/Navbar';
+import { AiFillCar, AiFillClockCircle } from "react-icons/ai";
+import { FaHandshake, FaHandHoldingUsd } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="bg-dark">
-      <Navbar />
+    <div className="bg-dark mt-[-8rem] pt-[8rem]">
       <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0">
         <div className="flex flex-col lg:w-1/2">
           <h2 className="text-white text-3xl font-bold text-center mt-16 lg:text-4xl lg:text-left leading-10">
             Get behind the wheel and boost your income
           </h2>
-          <p className="text-center lg:text-left text-gray-300 text-bold mt-8 lg:my-0">
+          <p className="text-center lg:text-left text-gray-300 text-bold mt-8 lg:my-0 leading-relaxed">
             Join our growing fleet and enjoy the easiest way to be financially{" "}
             <br /> independent with a path to vehicle ownership at same time.
           </p>
@@ -17,38 +17,58 @@ const HeroSection = () => {
             Start Earning Now
           </button>
         </div>
-        <div className="lg:flex space-y-12 py-8 lg:space-y-0 lg:space-x-10 lg:p-12 my-16 mb-8 lg:mt-8 bg-blurBg bg-blured rounded">
-          <div className="lg:w-1/4">
-            <p className="text-white text-lg font-bold text-center lg:text-xl lg:text-left leading-10">
-              Work With Multiple Clients
-            </p>
-            <p className="text-gray-400 text-bold text-center lg:text-left">
-              Get paid through one platform
-            </p>
+        <div className="lg:flex space-y-12 py-8 lg:py-10 lg:px-8 lg:space-y-0 lg:space-x-10 lg:mx-3 my-16 mb-8 lg:mt-16 bg-blurBg bg-blured rounded-xl">
+          <div className="lg:w-1/4 lg:flex justify-center lg:space-x-3">
+            <div className="hero-icon flex justify-center">
+              <FaHandshake color="white" size={"44px"} />
+            </div>
+            <div className="hero-info">
+              <p className="text-white text-lg font-bold text-center lg:text-left">
+                Work With Multiple Clients
+              </p>
+              <p className="text-gray-400 text-sm text-center lg:text-left leading-relaxed lg:my-2">
+                Get paid through one platform
+              </p>
+            </div>
           </div>
-          <div className="lg:w-1/4">
-            <p className="text-white text-lg font-bold text-center lg:text-xl lg:text-left leading-10">
-              Access to Vehicle Financing
-            </p>
-            <p className="text-gray-400 text-bold text-center lg:text-left">
-              Fast credit scoring decision within 48 hours
-            </p>
+          <div className="lg:w-1/4 lg:flex justify-center lg:space-x-3">
+            <div className="hero-icon flex justify-center">
+              <AiFillCar color="white" size={"44px"} />
+            </div>
+            <div className="hero-info">
+              <p className="text-white text-lg font-bold text-center lg:text-left">
+                Access to Vehicle Financing
+              </p>
+              <p className="text-gray-400 text-sm text-center lg:text-left leading-relaxed lg:my-2">
+                Fast credit scoring decision within 48 hours
+              </p>
+            </div>
           </div>
-          <div className="lg:w-1/4">
-            <p className="text-white text-lg font-bold text-center lg:text-xl lg:text-left leading-10">
-              Easy Repayments
-            </p>
-            <p className="text-gray-400 text-bold text-center lg:text-left">
-              Affordable financial services with path to ownership
-            </p>
+          <div className="lg:w-1/4 lg:flex justify-center lg:space-x-3">
+            <div className="hero-icon flex justify-center">
+              <FaHandHoldingUsd color="white" size={"44px"} />
+            </div>
+            <div className="hero-info">
+              <p className="text-white text-lg font-bold text-center lg:text-left">
+                Easy Repayments
+              </p>
+              <p className="text-gray-400 text-sm text-center lg:text-left leading-relaxed lg:my-2">
+                Affordable financial services with path to ownership
+              </p>
+            </div>
           </div>
-          <div className="lg:w-1/4">
-            <p className="text-white text-lg font-bold text-center lg:text-xl lg:text-left leading-10">
-              Flexible working hours
-            </p>
-            <p className="text-gray-400 text-bold text-center lg:text-left">
-              Get paid through one platform
-            </p>
+          <div className="lg:w-1/4 lg:flex justify-center lg:space-x-3">
+            <div className="hero-icon flex justify-center">
+              <AiFillClockCircle color="white" size={"44px"} />
+            </div>
+            <div className="hero-info">
+              <p className="text-white text-lg font-bold text-center lg:text-left">
+                Flexible working hours
+              </p>
+              <p className="text-gray-400 text-sm text-center lg:text-left leading-relaxed lg:my-2">
+                Set a suitable working times for you
+              </p>
+            </div>
           </div>
         </div>
       </div>

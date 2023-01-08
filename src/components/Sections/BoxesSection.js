@@ -1,6 +1,6 @@
 const BoxesSection = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto p-4 lg:pb-12">
       <h2 className="text-2xl font-bold text-center mt-16 lg:text-3xl leading-10">
         Few steps to be a CAPTAIN and start earning with us
       </h2>
@@ -16,7 +16,7 @@ const BoxesSection = () => {
             <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
               Sign Up
             </h2>
-            <p>
+            <p className="leading-relaxed text-gray-600 text-gray-600">
               We need few information about you, and our team will contact you
               in 2 days.
             </p>
@@ -32,7 +32,7 @@ const BoxesSection = () => {
             <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
               Get Verified
             </h2>
-            <p>
+            <p className="leading-relaxed text-gray-600">
               All our captains have to pass our verification process, check the
               Captains page to know the eligibility criteria.
             </p>
@@ -48,7 +48,7 @@ const BoxesSection = () => {
             <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
               Choose your Vehicle
             </h2>
-            <p>
+            <p className="leading-relaxed text-gray-600">
               Using our smart calculator, you can estimate your weekly earnings
               and choose a suitable car with a flexible financing plan.
             </p>
@@ -64,7 +64,7 @@ const BoxesSection = () => {
             <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
               Drive and Own
             </h2>
-            <p>
+            <p className="leading-relaxed text-gray-600">
               You will pay a weekly amount deducted from your earnings based on
               a up to 36 months plan with a clear path ownership.
             </p>
@@ -72,7 +72,7 @@ const BoxesSection = () => {
         </div>
       </div>
       {/* choose your vehicle */}
-      <div className="car-gradient-box lg:flex rounded-xl lg:px-16 px-4 justify-between m-4 lg:m-8 py-4 lg:h-80">
+      <div className="car-gradient-box lg:flex rounded-xl lg:px-12 px-8 justify-between m-4 lg:mx-16 py-4 lg:h-80">
         <div className="lg:w-1/2 self-center">
           <h2 className="text-white text-center text-3xl font-bold mt-8 lg:text-5xl lg:text-left">
             Choose your Vehicle
