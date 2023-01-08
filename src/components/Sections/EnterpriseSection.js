@@ -25,7 +25,7 @@ const EnterpriseSection = () => {
             </button>
           </div>
         </div>
-        <div className="partners-section grid grid-cols-2 lg:grid-cols-6 gap-x-16 gap-y-12 container px-8 lg:px-16 mx-auto pb-16">
+        <div className="partners-section grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-16 gap-y-12 container px-8 lg:px-16 mx-auto pb-16">
           <div className="w-1/6 self-center items-center">
             <img
               src={require(`../../assets/images/logos/amazon.png`)}

@@ -1,56 +1,100 @@
-import Logo from '../assets/images/logo.png';
+import { useState } from "react";
+import Logo from "../assets/images/logo.png";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
-    return (
-        <nav className="container relative mx-auto px-8 lg:px-16 py-6">
-            <div className="flex items-center justify-between my-6">
-                <div className="z-30">
-                    <img src={Logo} alt="WeDeliver" id="logo" className="w-32"/>
-                </div>
+  const [menuToggle, setMenuToggle] = useState(false);
 
-                <div
-                    className="hidden items-center space-x-10 font-semibold text-grayishBlue md:flex"
-                >
-                    <a href="#features" className="hover:text-white transition ease-in duration-200"
-                    >Home</a
-                    >
-                    <a href="#download" className="hover:text-white transition ease-in duration-200"
-                    >Captains</a
-                    >
-                    <a href="#faq" className="hover:text-white transition ease-in duration-200">Enterprise</a>
+  const openMobileMenu = () => {
+    setMenuToggle(!menuToggle);
+  };
 
-                    <a href="#imp" className="hover:text-white transition ease-in duration-200">Impact</a>
-                    <a href="#imp" className="hover:text-white transition ease-in duration-200">بالعربي</a>
+  return (
+    <nav className="container relative mx-auto px-8 lg:px-16 py-6">
+      <div className="flex items-center justify-between my-6">
+        <div className="z-30">
+          <img src={Logo} alt="WeDeliver" id="logo" className="w-32" />
+        </div>
 
-                </div>
-                <button
-                    id="menu-btnp"
-                    className="z-30 block md:hidden focus:outline-none hamburger"
-                >
-                    <span className="hamburger-top"></span>
-                    <span className="hamburger-middle"></span>
-                    <span className="hamburger-bottom"></span>
-                </button>
-            </div>
-            <div
-                id="menu"
-                className="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
-            >
-                <div className="w-full py-3 text-center">
-                    <a href="#features" className="block hover:text-mainOrange">Features</a>
-                </div>
-                <div className="w-full py-3 text-center">
-                    <a href="#download" className="block hover:text-mainOrange">Download</a>
-                </div>
-                <div className="w-full py-3 text-center">
-                    <a href="#faq" className="block hover:text-mainOrange">FAQ</a>
-                </div>
-                <div className="w-full py-3 text-center">
-                    <a href="#salem" className="block hover:text-mainOrange">Login</a>
-                </div>
-            </div>
-        </nav>
-    );
-}
+        <div className="hidden items-center space-x-10 font-semibold text-grayishBlue md:flex">
+          <a
+            href="#features"
+            className="hover:text-white transition ease-in duration-200"
+          >
+            Home
+          </a>
+          <a
+            href="#download"
+            className="hover:text-white transition ease-in duration-200"
+          >
+            Captains
+          </a>
+          <a
+            href="#faq"
+            className="hover:text-white transition ease-in duration-200"
+          >
+            Enterprise
+          </a>
+
+          <a
+            href="#imp"
+            className="hover:text-white transition ease-in duration-200"
+          >
+            Impact
+          </a>
+          <a
+            href="#imp"
+            className="hover:text-white transition ease-in duration-200"
+          >
+            بالعربي
+          </a>
+        </div>
+        <button
+          id="menu-btnp"
+          className="z-30 block md:hidden focus:outline-none hamburger"
+          onClick={openMobileMenu}
+        >
+          {menuToggle ? (
+            <FiX size="24px" color="#ccc" />
+          ) : (
+            <FiMenu size="24px" color="#ccc" />
+          )}
+        </button>
+      </div>
+      {menuToggle && (
+        <div
+          id="menu"
+          className="fixed inset-0 z-20 flex-col items-left self-end w-3/4 h-full m-h-screen px-6 py-1 pt-24 pb-4 text-white bg-darkBg"
+        >
+          <div className="w-full py-3 text-left">
+            <a href="#features" className="block hover:text-mainOrange">
+              Home
+            </a>
+          </div>
+          <div className="w-full py-3 text-left">
+            <a href="#download" className="block hover:text-mainOrange">
+              Captains
+            </a>
+          </div>
+          <div className="w-full py-3 text-left">
+            <a href="#faq" className="block hover:text-mainOrange">
+              Enterprise
+            </a>
+          </div>
+          <div className="w-full py-3 text-left">
+            <a href="#salem" className="block hover:text-mainOrange">
+              Impact
+            </a>
+          </div>
+          <div className="w-full py-3 text-left">
+            <a href="#salem" className="block hover:text-mainOrange">
+              بالعربي
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
 
 export default Navbar;

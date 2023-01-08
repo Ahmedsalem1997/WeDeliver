@@ -3,7 +3,7 @@ const InfoSection = () => {
     <>
       <div className="container mx-auto px-4 lg:px-8 mt-[-2rem] mb-8 lg:my-16">
         <div className="background-wedeliver rounded-t-xl h-[18rem] lg:h-[34rem]"></div>
-        <div className="lg:flex">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
           <div className="group lg:w-1/4 bg-gray-50 p-8 h-[19rem] lg:rounded-bl-2xl hover:bg-mainOrange transition ease-linear duration-200">
             <h2 className="text-center lg:text-left text-xl lg:text-2xl font-bold my-4 group-hover:text-white">
               Women Empowrment
