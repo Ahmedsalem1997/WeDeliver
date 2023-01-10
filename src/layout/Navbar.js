@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Logo from "../assets/images/logo.png";
-import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -51,20 +50,18 @@ const Navbar = () => {
         </div>
         <button
           id="menu-btnp"
-          className="z-30 block md:hidden focus:outline-none hamburger"
           onClick={openMobileMenu}
+          className={`z-30 block md:hidden focus:outline-none hamburger ${menuToggle&&"open"}`}
         >
-          {menuToggle ? (
-            <FiX size="24px" color="#ccc" />
-          ) : (
-            <FiMenu size="24px" color="#ccc" />
-          )}
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
         </button>
       </div>
       {menuToggle && (
         <div
           id="menu"
-          className="fixed inset-0 z-20 flex-col items-left self-end w-3/4 h-full m-h-screen px-6 py-1 pt-24 pb-4 text-white bg-darkBg"
+          className="fixed inset-0 z-20 flex-col items-left self-end w-5/6 h-full m-h-screen px-10 py-1 pt-32 pb-4 text-white bg-darkBg opacity-95"
         >
           <div className="w-full py-3 text-left">
             <a href="#features" className="block hover:text-mainOrange">

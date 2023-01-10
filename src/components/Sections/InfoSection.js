@@ -4,7 +4,7 @@ const InfoSection = () => {
       <div className="container mx-auto px-4 lg:px-8 mt-[-2rem] mb-8 lg:my-16">
         <div className="background-wedeliver rounded-t-xl h-[18rem] lg:h-[34rem]"></div>
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2">
-          <div className="group lg:w-1/4 bg-gray-50 p-8 h-[19rem] lg:rounded-bl-2xl hover:bg-mainOrange transition ease-linear duration-200">
+          <div className="group bg-gray-50 p-8 h-[19rem] lg:rounded-bl-2xl hover:bg-mainOrange transition ease-linear duration-200">
             <h2 className="text-center lg:text-left text-xl lg:text-2xl font-bold my-4 group-hover:text-white">
               Women Empowrment
             </h2>
@@ -13,7 +13,7 @@ const InfoSection = () => {
               owners and to be self-sufficient.
             </p>
           </div>
-          <div className="group lg:w-1/4 bg-gray-100 p-8 h-[19rem] hover:bg-mainOrange transition ease-linear duration-200">
+          <div className="group bg-gray-100 p-8 h-[19rem] hover:bg-mainOrange transition ease-linear duration-200">
             <h2 className="text-center lg:text-left text-xl lg:text-2xl font-bold my-4 group-hover:text-white">
               Environmentally friendly
             </h2>
@@ -23,7 +23,7 @@ const InfoSection = () => {
               world.
             </p>
           </div>
-          <div className="group lg:w-1/4 bg-gray-200 p-8 h-[19rem] hover:bg-mainOrange transition ease-linear duration-200">
+          <div className="group bg-gray-200 p-8 h-[19rem] hover:bg-mainOrange transition ease-linear duration-200">
             <h2 className="text-center lg:text-left text-xl lg:text-2xl font-bold my-4 group-hover:text-white">
               Financial independency
             </h2>
@@ -33,7 +33,7 @@ const InfoSection = () => {
               financially independent.
             </p>
           </div>
-          <div className="group lg:w-1/4 bg-gray-300 p-8 h-[19rem] rounded-b-2xl lg:rounded-br-2xl lg:rounded-bl-none hover:bg-mainOrange transition ease-linear duration-200">
+          <div className="group bg-gray-300 p-8 h-[19rem] rounded-b-2xl lg:rounded-br-2xl lg:rounded-bl-none hover:bg-mainOrange transition ease-linear duration-200">
             <h2 className="text-center lg:text-left text-xl lg:text-2xl font-bold my-4 group-hover:text-white">
               Sustainability
             </h2>
