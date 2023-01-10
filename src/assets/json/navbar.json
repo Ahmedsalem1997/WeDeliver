@@ -1,0 +1,23 @@
+{ "mainNav": [
+    {
+      "id": "n1",
+      "name": "home",
+      "link": "/"
+    },
+    {
+      "id": "n2",
+      "name": "captains",
+      "link": "/"
+    },
+    {
+      "id": "n3",
+      "name": "enterprise",
+      "link": "/"
+    },
+    {
+      "id": "n4",
+      "name": "impact",
+      "link": "/"
+    }
+  ]
+}

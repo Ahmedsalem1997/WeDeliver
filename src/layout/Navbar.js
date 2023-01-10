@@ -1,7 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Logo from "../assets/images/logo.png";
+<<<<<<< HEAD
+||||||| e151b63
+import { FiMenu, FiX } from "react-icons/fi";
+=======
+import { FiMenu, FiX } from "react-icons/fi";
+import { Context } from "../components/Wrapper/Wrapper";
+// import { FormattedMessage } from "react-intl";
+>>>>>>> e471c80215fe68727540722913c4a6741c24a724
 
 const Navbar = () => {
+  const context = useContext(Context);
   const [menuToggle, setMenuToggle] = useState(false);
 
   const openMobileMenu = () => {
@@ -41,12 +50,18 @@ const Navbar = () => {
           >
             Impact
           </a>
-          <a
-            href="#imp"
-            className="hover:text-white transition ease-in duration-200"
+          <select
+            value={context.locale}
+            onChange={context.selectLanguage}
+            className="form-select navbar__language w-auto text-start bg-transparent border-0 text-white font-bold"
           >
-            بالعربي
-          </a>
+            <option className="text-black" value={"en"}>
+              ENGLISH
+            </option>
+            <option className="text-black" value={"ar"}>
+              العربية
+            </option>
+          </select>
         </div>
         <button
           id="menu-btnp"
