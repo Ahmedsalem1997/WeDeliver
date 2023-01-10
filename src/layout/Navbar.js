@@ -20,7 +20,7 @@ const Navbar = () => {
           <img src={Logo} alt="WeDeliver" id="logo" className="w-32" />
         </div>
 
-        <div className="hidden items-center space-x-10 font-semibold text-grayishBlue md:flex">
+        <div className="hidden items-center space-s-10 font-semibold text-grayishBlue md:flex">
           {links.mainNav.map((link) => {
             return (
               <Link

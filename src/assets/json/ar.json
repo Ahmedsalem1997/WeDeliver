@@ -6,9 +6,40 @@
     "homePage.heroSection.heading": "اجلس خلف عجلة القيادة وزد دخلك",
     "homePage.heroSection.subHeading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
     "homePage.heroSection.button": "إبدأ الربح الأن",
+
+    "homePage.heroSection.feature1.title": "العمل مع عدة عملاء",
+    "homePage.heroSection.feature1.content": "احصل على أموال من خلال منصة واحدة",
+    "homePage.heroSection.feature2.title": "الوصول إلى تمويل المركبات",
+    "homePage.heroSection.feature2.content": "قرار سريع لتسجيل الائتمان في غضون 48 ساعة",
+    "homePage.heroSection.feature3.title": "سداد سهل",
+    "homePage.heroSection.feature3.content": "خدمات مالية ميسورة التكلفة مع مسار الملكية",
+    "homePage.heroSection.feature4.title": "ساعات عمل مرنة",
+    "homePage.heroSection.feature4.content": "ساعات عمل مرنة حدد أوقات عمل مناسبة لك",
+
     "homePage.boxesSection.heading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
+    "homePage.boxesSection.box1.title": "أشترك",
+    "homePage.boxesSection.box1.content": "نحتاج إلى معلومات قليلة عنك ، وسيقوم فريقنا بالاتصال بك في غضون يومين.",
+    "homePage.boxesSection.box2.title": "الحصول على التحقق",
+    "homePage.boxesSection.box2.content": "يتعين على جميع الكابتن اجتياز عملية التحقق الخاصة بنا ، والتحقق من صفحة الكابتن لمعرفة معايير الأهلية.",
+    "homePage.boxesSection.box3.title": "اختر سيارتك",
+    "homePage.boxesSection.box3.content": "باستخدام الآلة الحاسبة الذكية الخاصة بنا ، يمكنك تقدير أرباحك الأسبوعية واختيار سيارة مناسبة بخطة تمويل مرنة.",
+    "homePage.boxesSection.box4.title": "قود و تملك",
+    "homePage.boxesSection.box4.content": "ستدفع مبلغًا أسبوعيًا يُخصم من أرباحك بناءً على خطة تصل إلى 36 شهرًا مع ملكية مسار واضح.",
+    "homePage.boxesSection.chooseBox.title": "اختر سيارتك",
+    "homePage.boxesSection.chooseBox.content": "باستخدام الآلة الحاسبة الذكية الخاصة بنا ، ستتمكن قريبًا من تقدير أرباحك واختيار المركبات الأكثر ملاءمة لك مع خطة تمويل مرنة.",
+    "homePage.boxesSection.chooseBox.button": "إحسب أرباحك",
+
     "homePage.enterpriseSection.title": "شركة؟",
-    "homePage.enterpriseSection.subTitle": "استمتع بحل الأسطول الخاص بنا",
+    "homePage.enterpriseSection.subtitle": "استمتع بحل الأسطول الخاص بنا",
     "homePage.enterpriseSection.content": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
-    "homePage.enterpriseSection.button": "قم بتوسيع أسطولك"
+    "homePage.enterpriseSection.button": "قم بتوسيع أسطولك",
+
+    "homePage.infoSection.info1.title": "تمكين المرأة",
+    "homePage.infoSection.info1.content": "نحن ملتزمون بمساعدة النساء على أن يصبحن صاحبات أعمال ناجحات وتحقيق الاكتفاء الذاتي.",
+    "homePage.infoSection.info2.title": "صديق للبيئة",
+    "homePage.infoSection.info2.content": "التزامنا ببناء أسطول إنتاجي هجين وكهربائي في العالم ، والمساهمة بشكل إيجابي في عالم أكثر استدامة.",
+    "homePage.infoSection.info3.title": "الاستقلال المالي",
+    "homePage.infoSection.info3.content": "من خلال حلنا المالي ، يمكن للقباطنة الوصول إلى تمويل المركبات ، مما يتيح لهم أن يكونوا أكثر إنتاجية واستقلالًا ماليًا.",
+    "homePage.infoSection.info4.title": "الاستدامة",
+    "homePage.infoSection.info4.content": "هدفنا النهائي هو تحقيق الاستدامة من خلال الحفاظ على جودة خدماتنا وإقامة شراكة عالية الجودة بموثوقية عالية."
 }

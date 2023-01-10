@@ -1,31 +1,31 @@
 {
-    "footer": {
+  "footer": {
     "column1": {
-        "content": "On a mission to help the mobility gig economy thrives in the emerging markets."
+      "content": "On a mission to help the mobility gig economy thrives in the emerging markets."
     },
     "column2": {
-        "title": "company",
-        "links": {
-            "link1": "about us",
-            "link2": "careers",
-            "link3": "press"
-        }
+      "title": "company",
+      "links": {
+        "link1": "about us",
+        "link2": "careers",
+        "link3": "press"
+      }
     },
     "column3": {
-        "title": "get help",
-        "links": {
-            "link1": "contact us",
-            "link2": "faq",
-            "link3": "chat"
-        }
+      "title": "get help",
+      "links": {
+        "link1": "contact us",
+        "link2": "faq",
+        "link3": "chat"
+      }
     },
     "column4": {
-        "title": "get started",
-        "links": {
-            "link1": "enterprise signup",
-            "link2": "captains signup",
-            "link3": "earnings calculator"
-        }
+      "title": "get started",
+      "links": {
+        "link1": "enterprise signup",
+        "link2": "captains signup",
+        "link3": "earnings calculator"
+      }
     }
-}
+  }
 }

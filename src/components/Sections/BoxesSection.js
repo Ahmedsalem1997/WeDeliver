@@ -1,8 +1,13 @@
+import { FormattedMessage } from "react-intl";
+
 const BoxesSection = () => {
   return (
     <div className="container mx-auto p-4 lg:pb-12">
       <h2 className="text-2xl font-bold text-center mt-16 lg:text-3xl leading-10">
-        Few steps to be a CAPTAIN and start earning with us
+        <FormattedMessage
+          id="homePage.boxesSection.heading"
+          defaultMessage="homePage.boxesSection.heading"
+        />
       </h2>
       {/* Boxes */}
       <div className="lg:flex m-8 gap-x-8">
@@ -13,12 +18,17 @@ const BoxesSection = () => {
             alt="icon"
           />
           <div>
-            <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
-              Sign Up
+            <h2 className="text-xl font-bold text-center lg:text-left lg:rtl:text-right lg:text-xl mb-4">
+              <FormattedMessage
+                id="homePage.boxesSection.box1.title"
+                defaultMessage="homePage.boxesSection.box1.title"
+              />
             </h2>
-            <p className="leading-relaxed text-gray-600 text-gray-600">
-              We need few information about you, and our team will contact you
-              in 2 days.
+            <p className="leading-relaxed text-gray-600">
+              <FormattedMessage
+                id="homePage.boxesSection.box1.content"
+                defaultMessage="homePage.boxesSection.box1.content"
+              />
             </p>
           </div>
         </div>
@@ -29,12 +39,17 @@ const BoxesSection = () => {
             alt="icon"
           />
           <div>
-            <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
-              Get Verified
+            <h2 className="text-xl font-bold text-center lg:text-left lg:rtl:text-right lg:text-xl mb-4">
+              <FormattedMessage
+                id="homePage.boxesSection.box2.title"
+                defaultMessage="homePage.boxesSection.box2.title"
+              />
             </h2>
-            <p className="leading-relaxed text-gray-600">
-              All our captains have to pass our verification process, check the
-              Captains page to know the eligibility criteria.
+            <p className="leading-relaxed text-gray-600 lg:rtl:text-right">
+              <FormattedMessage
+                id="homePage.boxesSection.box2.content"
+                defaultMessage="homePage.boxesSection.box2.content"
+              />
             </p>
           </div>
         </div>
@@ -45,28 +60,38 @@ const BoxesSection = () => {
             alt="icon"
           />
           <div>
-            <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
-              Choose your Vehicle
+            <h2 className="text-xl font-bold text-center lg:text-left lg:rtl:text-right lg:text-xl mb-4">
+              <FormattedMessage
+                id="homePage.boxesSection.box3.title"
+                defaultMessage="homePage.boxesSection.box3.title"
+              />
             </h2>
-            <p className="leading-relaxed text-gray-600">
-              Using our smart calculator, you can estimate your weekly earnings
-              and choose a suitable car with a flexible financing plan.
+            <p className="leading-relaxed text-gray-600 lg:rtl:text-right">
+              <FormattedMessage
+                id="homePage.boxesSection.box3.content"
+                defaultMessage="homePage.boxesSection.box3.content"
+              />
             </p>
           </div>
         </div>
-        <div className="icon-card flex flex-col justify-around lg:w-1/4 rounded-lg my-4 p-8 pt-0 h-[24rem]">
+        <div className="icon-card flex flex-col justify-around lg:w-1/4 rounded-lg  my-4 p-8 pt-0 h-[24rem]">
           <img
             src={require(`../../assets/images/drive-own.png`)}
             className="icon-card__icon w-[8rem] self-center my-8"
             alt="icon"
           />
           <div>
-            <h2 className="text-xl font-bold text-center lg:text-left lg:text-xl mb-4">
-              Drive and Own
+            <h2 className="text-xl font-bold text-center lg:text-left lg:rtl:text-right lg:text-xl mb-4">
+              <FormattedMessage
+                id="homePage.boxesSection.box4.title"
+                defaultMessage="homePage.boxesSection.box4.title"
+              />
             </h2>
-            <p className="leading-relaxed text-gray-600">
-              You will pay a weekly amount deducted from your earnings based on
-              a up to 36 months plan with a clear path ownership.
+            <p className="leading-relaxed text-gray-600 lg:rtl:text-right">
+              <FormattedMessage
+                id="homePage.boxesSection.box4.content"
+                defaultMessage="homePage.boxesSection.box4.content"
+              />
             </p>
           </div>
         </div>
@@ -74,16 +99,23 @@ const BoxesSection = () => {
       {/* choose your vehicle */}
       <div className="car-gradient-box lg:flex rounded-xl lg:px-12 px-8 justify-between m-4 lg:mx-16 py-4 lg:h-80">
         <div className="lg:w-1/2 self-center">
-          <h2 className="text-white text-center text-3xl font-bold mt-8 lg:text-5xl lg:text-left">
-            Choose your Vehicle
+          <h2 className="text-white text-center text-3xl font-bold mt-8 lg:text-5xl lg:text-left lg:rtl:text-right">
+            <FormattedMessage
+              id="homePage.boxesSection.chooseBox.title"
+              defaultMessage="homePage.boxesSection.chooseBox.title"
+            />
           </h2>
-          <p className="text-white text-center my-4 lg:text-left">
-            Using our smart calculator, you will soon be able to estimate your
-            earnings, choose your most suitable vehicles with flexible financing
-            plan.
+          <p className="text-white text-center my-4 lg:text-left lg:rtl:text-right">
+            <FormattedMessage
+              id="homePage.boxesSection.chooseBox.content"
+              defaultMessage="homePage.boxesSection.chooseBox.content"
+            />
           </p>
           <button className="p-4 w-full text-sm font-semibold text-white my-4 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
-            Estimate your Earnings
+            <FormattedMessage
+              id="homePage.boxesSection.chooseBox.button"
+              defaultMessage="homePage.boxesSection.chooseBox.button"
+            />
           </button>
         </div>
         <div className="lg:w-1/3 self-center">

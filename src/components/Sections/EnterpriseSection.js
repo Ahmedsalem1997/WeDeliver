@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 const EnterpriseSection = () => {
   return (
     <>
@@ -10,18 +12,29 @@ const EnterpriseSection = () => {
             />
           </div>
           <div className="flex flex-col lg:w-2/5 self-center">
-            <h2 className="text-center text-gray-300 text-xl my-4 font-bold lg:text-xl lg:text-left">
-              Enterprise?
+            <h2 className="text-center text-gray-300 text-xl my-4 font-bold lg:text-xl lg:text-left lg:rtl:text-right">
+              <FormattedMessage
+                id="homePage.enterpriseSection.title"
+                defaultMessage="homePage.enterpriseSection.title"
+              />
             </h2>
-            <h2 className="text-center text-white text-xl font-bold lg:text-3xl lg:text-left leading-10">
-              Enjoy our Fleet-As-A-Solution
+            <h2 className="text-center text-white text-xl font-bold lg:text-3xl lg:text-left lg:rtl:text-right leading-10">
+              <FormattedMessage
+                id="homePage.enterpriseSection.subtitle"
+                defaultMessage="homePage.enterpriseSection.subtitle"
+              />
             </h2>
-            <p className="text-gray-300 text-bold">
-              Join our growing fleet and enjoy the easiest way to be financially{" "}
-              <br /> independent with a path to vehicle ownership at same time.
+            <p className="text-gray-300 text-bold lg:rtl:text-right">
+              <FormattedMessage
+                id="homePage.enterpriseSection.content"
+                defaultMessage="homePage.enterpriseSection.content"
+              />
             </p>
             <button className="p-4 w-100 text-sm font-semibold text-white mt-12 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
-              Expand Your Fleet
+              <FormattedMessage
+                id="homePage.enterpriseSection.button"
+                defaultMessage="homePage.enterpriseSection.button"
+              />
             </button>
           </div>
         </div>
@@ -34,10 +47,18 @@ const EnterpriseSection = () => {
             />
           </div>
           <div className="w-1/6 self-center">
-            <img src={require(`../../assets/images/logos/kfc.png`)} className="max-w-[9rem]" alt="Car" />
+            <img
+              src={require(`../../assets/images/logos/kfc.png`)}
+              className="max-w-[9rem]"
+              alt="Car"
+            />
           </div>
           <div className="w-1/6 self-center">
-            <img src={require(`../../assets/images/logos/ph.png`)} className="max-w-[9rem]" alt="Car" />
+            <img
+              src={require(`../../assets/images/logos/ph.png`)}
+              className="max-w-[9rem]"
+              alt="Car"
+            />
           </div>
           <div className="w-1/6 self-center">
             <img
@@ -47,10 +68,18 @@ const EnterpriseSection = () => {
             />
           </div>
           <div className="w-1/6 self-center">
-            <img src={require(`../../assets/images/logos/kw.png`)} className="max-w-[9rem]" alt="Car" />
+            <img
+              src={require(`../../assets/images/logos/kw.png`)}
+              className="max-w-[9rem]"
+              alt="Car"
+            />
           </div>
           <div className="w-1/6 self-center">
-            <img src={require(`../../assets/images/logos/sh.png`)} className="max-w-[9rem]" alt="Car" />
+            <img
+              src={require(`../../assets/images/logos/sh.png`)}
+              className="max-w-[9rem]"
+              alt="Car"
+            />
           </div>
         </div>
       </div>

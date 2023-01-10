@@ -4,24 +4,23 @@
             "features": [
                 {
                     "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
+                    "content": "Get paid through one platform"
                 },
                 {
                     "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
+                    "content": "Get paid through one platform"
                 },
                 {
                     "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
+                    "content": "Get paid through one platform"
                 },
                 {
                     "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
+                    "content": "Get paid through one platform"
                 }
             ]
         },
         "boxesSection": {
-            "heading": "Few steps to be a CAPTAIN and start earning with us",
             "boxes": [
                 {
                     "title":"Sign Up",
@@ -39,18 +38,7 @@
                     "title": "Drive and Own",
                     "content": "You will pay a weekly amount deducted from your earnings based on a up to 36 months plan with a clear path ownership."
                 }
-            ],
-            "chooseBox": {
-                "title": "Choose your Vehicle",
-                "content": "Using our smart calculator, you will soon be able to estimate your earnings, choose your most suitable vehicles with flexible financing plan.",
-                "button": "Estimate your Earnings"
-            }
-        },
-        "enterpriseSection": {
-            "title": "Enterprise?",
-            "subTitle": "Enjoy our Fleet-As-A-Solution",
-            "content": "Join our growing fleet and enjoy the easiest way to be financially independent with a path to vehicle ownership at same time.",
-            "button": "Expand Your Fleet"
+            ]
         },
         "infoSection": {
             "boxes": [
