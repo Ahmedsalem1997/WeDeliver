@@ -1,23 +1,16 @@
-import BoxesSection from "./components/Sections/BoxesSection";
-import EnterpriseSection from "./components/Sections/EnterpriseSection";
-import HeroSection from "./components/Sections/HeroSection";
-import InfoSection from './components/Sections/InfoSection';
-import Navbar from "./layout/Navbar";
-import Footer from "./layout/Footer";
 import Wrapper from "./components/Wrapper/Wrapper";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home"
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
     <Wrapper>
-      <Navbar />
-      <HeroSection />
-      <BoxesSection />
-      <EnterpriseSection />
-      <InfoSection />
-      <Footer />
+      <Routes>
+      <Route path="/" element={<Home />} />
+      </Routes>
     </Wrapper>
-    </>
+    </BrowserRouter>
   )
 }
 

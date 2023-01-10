@@ -6,7 +6,7 @@ import React, { useState, createContext } from "react";
 export const Context = createContext();
 const local = navigator.language;
 let lang;
-local === "en" ? lang = English : lang = Arabic;
+local === "ar" ? lang = Arabic : lang = English;
 
 const Wrapper = (props) => {
     const [locale, setLocale] = useState(local);
@@ -16,12 +16,12 @@ const Wrapper = (props) => {
         const newLocale = e.target.value;
         const htmlPage = document.getElementById("page");
         setLocale(newLocale);
-        if(newLocale === "en") {
-            setMessages(English);
-            htmlPage.setAttribute('dir', 'ltr');
-        } else {
+        if(newLocale === "ar") {
             setMessages(Arabic);
             htmlPage.setAttribute('dir', 'rtl');
+        } else {
+            setMessages(English);
+            htmlPage.setAttribute('dir', 'ltr');
         }
     }
 

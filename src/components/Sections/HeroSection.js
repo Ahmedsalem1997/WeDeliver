@@ -1,21 +1,29 @@
 import { AiFillCar, AiFillClockCircle } from "react-icons/ai";
 import { FaHandshake, FaHandHoldingUsd } from "react-icons/fa";
+import { FormattedMessage } from "react-intl";
 
 const HeroSection = () => {
-  // const data = require('../../assets/json/en.json')
   return (
     <div className="bg-dark mt-[-8rem] pt-[8rem]">
       <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0">
         <div className="flex flex-col lg:w-1/2">
           <h2 className="text-white text-3xl font-bold text-center mt-16 lg:text-4xl lg:text-left leading-10">
-            Get behind the wheel and boost your income
+            <FormattedMessage
+              id="homePage.heroSection.heading"
+              defaultMessage="homePage.heroSection.heading"
+            />
           </h2>
           <p className="text-center lg:text-left text-gray-300 text-bold mt-8 lg:my-0 leading-relaxed">
-            Join our growing fleet and enjoy the easiest way to be financially{" "}
-            <br /> independent with a path to vehicle ownership at same time.
+            <FormattedMessage
+              id="homePage.heroSection.subHeading"
+              defaultMessage="homePage.heroSection.subHeading"
+            />
           </p>
           <button className="p-4 w-56 text-sm font-semibold mx-auto lg:mx-0 text-white mt-12 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
-            Start Earning Now
+            <FormattedMessage
+              id="homePage.heroSection.button"
+              defaultMessage="homePage.heroSection.button"
+            />
           </button>
         </div>
         <div className="lg:flex space-y-12 py-8 lg:py-10 lg:px-8 lg:space-y-0 lg:space-x-10 lg:mx-3 my-16 mb-8 lg:mt-16 bg-blurBg bg-blured rounded-xl">

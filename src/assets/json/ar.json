@@ -1,114 +1,14 @@
 {
-    "navbar": {
-        "home": "home",
-        "captains": "captains",
-        "enterprise": "enterprise",
-        "impact": "impact"
-    },
-    "footer": {
-        "column1": {
-            "content": "On a mission to help the mobility gig economy thrives in the emerging markets."
-        },
-        "column2": {
-            "title": "company",
-            "links": {
-                "link1": "about us",
-                "link2": "careers",
-                "link3": "press"
-            }
-        },
-        "column3": {
-            "title": "get help",
-            "links": {
-                "link1": "contact us",
-                "link2": "faq",
-                "link3": "chat"
-            }
-        },
-        "column4": {
-            "title": "get started",
-            "links": {
-                "link1": "enterprise signup",
-                "link2": "captains signup",
-                "link3": "earnings calculator"
-            }
-        }
-    },
-    "homePage": {
-        "heroSection": {
-            "heading": "Get behind the wheel and boost your income",
-            "subHeading": "Join our growing fleet and enjoy the easiest way to be financially independent with a path to vehicle ownership at same time.",
-            "button": "Start Earning Now",
-            "features": [
-                {
-                    "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
-                },
-                {
-                    "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
-                },
-                {
-                    "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
-                },
-                {
-                    "title": "Work With Multiple Clients",
-                    "subTitle": "Get paid through one platform"
-                }
-            ]
-        },
-        "boxesSection": {
-            "heading": "Few steps to be a CAPTAIN and start earning with us",
-            "boxes": [
-                {
-                    "title":"Sign Up",
-                    "content": "We need few information about you, and our team will contact you in 2 days."
-                },
-                {
-                    "title": "Get Verified",
-                    "content": "All our captains have to pass our verification process, check the Captains page to know the eligibility criteria."
-                },
-                {
-                    "title": "Choose your Vehicle",
-                    "content": "Using our smart calculator, you can estimate your weekly earnings and choose a suitable car with a flexible financing plan."
-                },
-                {
-                    "title": "Drive and Own",
-                    "content": "You will pay a weekly amount deducted from your earnings based on a up to 36 months plan with a clear path ownership."
-                }
-            ],
-            "chooseBox": {
-                "title": "Choose your Vehicle",
-                "content": "Using our smart calculator, you will soon be able to estimate your earnings, choose your most suitable vehicles with flexible financing plan.",
-                "button": "Estimate your Earnings"
-            }
-        },
-        "enterpriseSection": {
-            "title": "Enterprise?",
-            "subTitle": "Enjoy our Fleet-As-A-Solution",
-            "content": "Join our growing fleet and enjoy the easiest way to be financially independent with a path to vehicle ownership at same time.",
-            "button": "Expand Your Fleet"
-        },
-        "infoSection": {
-            "boxes": [
-                {
-                    "title": "Women Empowrment",
-                    "content": "We are committed to helping women become successful business owners and to be self-sufficient."
-                },
-                {
-                    "title": "Environmentally friendly",
-                    "content": "Our commitment to building a productive hybrid and electric fleet in the world, and positively contributing to a more sustainable world."
-                },
-                {
-                    "title": "Financial independency",
-                    "content": "With our financial solution, captains can access vehicle financing, thus allowing them to be more productive and financially independent."
-                },
-                {
-                    "title": "Sustainability",
-                    "content": "Our ultimate goal is to achieve sustainability through maintaining the quality of our services and establishing a high-quality partnership with high reliability."
-                }
-            ]
-        }
-    }
+    "mainNav.home": "الرئيسية",
+    "mainNav.captains": "السائقين",
+    "mainNav.enterprise": "الشركات",
+    "mainNav.impact": "التأثير",
+    "homePage.heroSection.heading": "اجلس خلف عجلة القيادة وزد دخلك",
+    "homePage.heroSection.subHeading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
+    "homePage.heroSection.button": "إبدأ الربح الأن",
+    "homePage.boxesSection.heading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
+    "homePage.enterpriseSection.title": "شركة؟",
+    "homePage.enterpriseSection.subTitle": "استمتع بحل الأسطول الخاص بنا",
+    "homePage.enterpriseSection.content": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
+    "homePage.enterpriseSection.button": "قم بتوسيع أسطولك"
 }

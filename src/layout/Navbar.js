@@ -1,15 +1,11 @@
 import { useState, useContext } from "react";
 import Logo from "../assets/images/logo.png";
-<<<<<<< HEAD
-||||||| e151b63
-import { FiMenu, FiX } from "react-icons/fi";
-=======
-import { FiMenu, FiX } from "react-icons/fi";
 import { Context } from "../components/Wrapper/Wrapper";
-// import { FormattedMessage } from "react-intl";
->>>>>>> e471c80215fe68727540722913c4a6741c24a724
+import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
+  const links = require("../assets/json/navbar.json");
   const context = useContext(Context);
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -25,31 +21,20 @@ const Navbar = () => {
         </div>
 
         <div className="hidden items-center space-x-10 font-semibold text-grayishBlue md:flex">
-          <a
-            href="#features"
-            className="hover:text-white transition ease-in duration-200"
-          >
-            Home
-          </a>
-          <a
-            href="#download"
-            className="hover:text-white transition ease-in duration-200"
-          >
-            Captains
-          </a>
-          <a
-            href="#faq"
-            className="hover:text-white transition ease-in duration-200"
-          >
-            Enterprise
-          </a>
-
-          <a
-            href="#imp"
-            className="hover:text-white transition ease-in duration-200"
-          >
-            Impact
-          </a>
+          {links.mainNav.map((link) => {
+            return (
+              <Link
+                className="text-white text-decoration-none"
+                to={link.link}
+                key={link.id}
+              >
+                <FormattedMessage
+                  id={`mainNav.${link.name}`}
+                  defaultMessage={link.name}
+                />
+              </Link>
+            );
+          })}
           <select
             value={context.locale}
             onChange={context.selectLanguage}
@@ -66,11 +51,13 @@ const Navbar = () => {
         <button
           id="menu-btnp"
           onClick={openMobileMenu}
-          className={`z-30 block md:hidden focus:outline-none hamburger ${menuToggle&&"open"}`}
+          className={`z-30 block md:hidden focus:outline-none hamburger ${
+            menuToggle && "open"
+          }`}
         >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
         </button>
       </div>
       {menuToggle && (
