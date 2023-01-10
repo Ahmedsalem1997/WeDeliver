@@ -2,6 +2,7 @@ import { AiFillCar, AiFillClockCircle } from "react-icons/ai";
 import { FaHandshake, FaHandHoldingUsd } from "react-icons/fa";
 
 const HeroSection = () => {
+  // const data = require('../../assets/json/en.json')
   return (
     <div className="bg-dark mt-[-8rem] pt-[8rem]">
       <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0">
