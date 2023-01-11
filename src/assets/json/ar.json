@@ -7,6 +7,16 @@
     "homePage.heroSection.subHeading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
     "homePage.heroSection.button": "إبدأ الربح الأن",
 
+    "links.aboutUs": "عن الشركة",
+    "links.careers": "الوظائف",
+    "links.press": "الأخبار",
+    "links.contactUs": "تواصل معنا",
+    "links.faq": "الأسألة الأكثر انتشاراً",
+    "links.chat": "الدردشة",
+    "links.enterpriseSignUp": "تسجيل الدخول للشركات",
+    "links.captainsSignUp": "تسجيل الدخول للسائقين",
+    "links.earningsSignUp": "تسجيل الدخول لمنصة الأرباح",
+
     "homePage.heroSection.feature1.title": "العمل مع عدة عملاء",
     "homePage.heroSection.feature1.content": "احصل على أموال من خلال منصة واحدة",
     "homePage.heroSection.feature2.title": "الوصول إلى تمويل المركبات",
@@ -41,5 +51,10 @@
     "homePage.infoSection.info3.title": "الاستقلال المالي",
     "homePage.infoSection.info3.content": "من خلال حلنا المالي ، يمكن للقباطنة الوصول إلى تمويل المركبات ، مما يتيح لهم أن يكونوا أكثر إنتاجية واستقلالًا ماليًا.",
     "homePage.infoSection.info4.title": "الاستدامة",
-    "homePage.infoSection.info4.content": "هدفنا النهائي هو تحقيق الاستدامة من خلال الحفاظ على جودة خدماتنا وإقامة شراكة عالية الجودة بموثوقية عالية."
+    "homePage.infoSection.info4.content": "هدفنا النهائي هو تحقيق الاستدامة من خلال الحفاظ على جودة خدماتنا وإقامة شراكة عالية الجودة بموثوقية عالية.",
+
+    "footer.about": "في مهمة لمساعدة اقتصاد أزمات التنقل في الأسواق الناشئة.",
+    "footer.company": "الشركة",
+    "footer.help": "المساعدة",
+    "footer.getStarted": "ابدأ الأن"
 }

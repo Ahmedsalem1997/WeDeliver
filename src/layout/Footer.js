@@ -1,4 +1,9 @@
+import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
+
 const Footer = () => {
+  const links = require("../assets/json/footer.json");
+
   return (
     <div className="bg-dark h-100">
       <div className="container mx-auto p-8 py-32 lg:flex">
@@ -8,33 +13,77 @@ const Footer = () => {
             alt="WeDeliver"
             className="max-w-[10rem] mx-auto lg:mx-0"
           />
-          <p className="text-center lg:text-left text-gray-400 leading-relaxed my-8">
-            On a mission to help the mobility gig economy thrives in the
-            emerging markets.
+          <p className="text-center lg:text-left text-gray-400 leading-relaxed my-8 lg:rtl:text-right">
+            <FormattedMessage id="footer.about" defaultMessage="footer.about" />
           </p>
         </div>
         <div className="text-center lg:text-left lg:w-1/4 px-4">
-          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">Company</h2>
+          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0 lg:rtl:text-right">
+            <FormattedMessage
+              id="footer.company"
+              defaultMessage="footer.company"
+            />
+          </h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">About Us</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Careers</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Press</a>
+            {links.footer.column2.links.map((link) => {
+              return (
+                <Link
+                  className="text-gray-500 lg:rtl:text-right hover:text-mainOrange transition duration-200 ease-linear"
+                  to={link.link}
+                  key={link.id}
+                >
+                  <FormattedMessage
+                    id={`links.${link.name}`}
+                    defaultMessage={link.name}
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
         <div className="text-center lg:text-left lg:w-1/4 px-4">
-          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">GET HELP</h2>
+          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0 lg:rtl:text-right">
+            <FormattedMessage id="footer.help" defaultMessage="footer.help" />
+          </h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Contact Us</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">FAQ</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Chat</a>
+            {links.footer.column3.links.map((link) => {
+              return (
+                <Link
+                  className="text-gray-500 lg:rtl:text-right hover:text-mainOrange transition duration-200 ease-linear"
+                  to={link.link}
+                  key={link.id}
+                >
+                  <FormattedMessage
+                    id={`links.${link.name}`}
+                    defaultMessage={link.name}
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
         <div className="text-center lg:text-left lg:w-1/4 px-4">
-          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0">GET STARTED</h2>
+          <h2 className="text-white font-bold uppercase mt-8 mb-4 lg:mt-0 lg:rtl:text-right">
+            <FormattedMessage
+              id="footer.getStarted"
+              defaultMessage="footer.getStarted"
+            />
+          </h2>
           <div className="useful-links flex flex-col justify-between space-y-2">
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Enterprise Signup</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Captains Signup</a>
-            <a href="/" className="text-gray-500 hover:text-mainOrange transition duration-200 ease-linear">Earnings Calculator</a>
+            {links.footer.column4.links.map((link) => {
+              return (
+                <Link
+                  className="text-gray-500 lg:rtl:text-right hover:text-mainOrange transition duration-200 ease-linear"
+                  to={link.link}
+                  key={link.id}
+                >
+                  <FormattedMessage
+                    id={`links.${link.name}`}
+                    defaultMessage={link.name}
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

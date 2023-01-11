@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 @media screen(lg) {
@@ -15,6 +14,10 @@
     backface-visibility: hidden;
     animation: slideBg 8s linear infinite 0s;
     background-image: url('../src/assets/images/P4.png');
+  }
+
+  .hero-backg[dir=rtl] {
+    background-position: 5%, 50% !important;
   }
   
   p {

@@ -4,6 +4,16 @@
     "mainNav.enterprise": "Enterprise",
     "mainNav.impact": "Impact",
 
+    "links.aboutUs": "About Us",
+    "links.careers": "Careers",
+    "links.press": "Press",
+    "links.contactUs": "Contact Us",
+    "links.faq": "Faq",
+    "links.chat": "Chat",
+    "links.enterpriseSignUp": "Enterprise SignUp",
+    "links.captainsSignUp": "Captains SignUp",
+    "links.earningsSignUp": "Earnings SignUp",
+
     "homePage.heroSection.heading": "Get behind the wheel and boost your income",
     "homePage.heroSection.subHeading": "Join our growing fleet and enjoy the easiest way to be financially independent with a path to vehicle ownership at same time.",
     "homePage.heroSection.button": "Start Earning Now",
@@ -42,5 +52,12 @@
     "homePage.infoSection.info3.title": "Financial independency",
     "homePage.infoSection.info3.content": "With our financial solution, captains can access vehicle financing, thus allowing them to be more productive and financially independent.",
     "homePage.infoSection.info4.title": "Sustainability",
-    "homePage.infoSection.info4.content": "Our ultimate goal is to achieve sustainability through maintaining the quality of our services and establishing a high-quality partnership with high reliability."
+    "homePage.infoSection.info4.content": "Our ultimate goal is to achieve sustainability through maintaining the quality of our services and establishing a high-quality partnership with high reliability.",
+
+    "footer.about": "On a mission to help the mobility gig economy thrives in the emerging markets.",
+    "footer.company": "Company",
+    "footer.help": "Get Help",
+    "footer.getStarted": "get started"
+
+
 }

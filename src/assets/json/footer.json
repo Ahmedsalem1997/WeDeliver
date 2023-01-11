@@ -1,31 +1,61 @@
 {
   "footer": {
-    "column1": {
-      "content": "On a mission to help the mobility gig economy thrives in the emerging markets."
-    },
     "column2": {
-      "title": "company",
-      "links": {
-        "link1": "about us",
-        "link2": "careers",
-        "link3": "press"
-      }
+      "links": [
+        {
+          "id": "l1",
+          "name": "aboutUs",
+          "link": "/"
+        },
+        {
+          "id": "l2",
+          "name": "careers",
+          "link": "/"
+        },
+        {
+          "id": "l3",
+          "name": "press",
+          "link": "/"
+        }
+      ]
     },
     "column3": {
-      "title": "get help",
-      "links": {
-        "link1": "contact us",
-        "link2": "faq",
-        "link3": "chat"
-      }
+      "links": [
+        {
+          "id": "l4",
+          "name": "contactUs",
+          "link": "/"
+        },
+        {
+          "id": "l5",
+          "name": "faq",
+          "link": "/"
+        },
+        {
+          "id": "l6",
+          "name": "chat",
+          "link": "/"
+        }
+      ]
     },
     "column4": {
-      "title": "get started",
-      "links": {
-        "link1": "enterprise signup",
-        "link2": "captains signup",
-        "link3": "earnings calculator"
-      }
+      "links": [
+        {
+          "id": "l7",
+          "name": "enterpriseSignUp",
+          "link": "/"
+        },
+        {
+          "id": "l8",
+          "name": "captainsSignUp",
+          "link": "/"
+        },
+        {
+          "id": "l9",
+          "name": "earningsSignUp",
+          "link": "/"
+        }
+      ]
     }
   }
 }
