@@ -3,44 +3,45 @@
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@media screen(lg) {
+@media screen and (min-width: 1170px) {
 
   .hero-backg {
     width: 100%;
-    height: 84vh;
+    /* height: 84vh; */
     background-repeat: no-repeat;
-    background-position: 95%, 50%;
-    background-size: 34%;
+    background-position-x: 95%, 50%;
+    background-position-y: bottom;
+    background-size: 300px 80vh;
     backface-visibility: hidden;
     animation: slideBg 8s linear infinite 0s;
     background-image: url('../src/assets/images/P4.png');
   }
 
-  .hero-backg[dir=rtl] {
-    background-position: 5%, 50% !important;
+  [dir=rtl] .hero-backg {
+    background-position-x: 5%, 50%;
   }
   
   p {
     font-size: 15px;
   }
 
-  /* @keyframes slideBg {
+  @keyframes slideBg {
     0% {
-      background: url('../src/assets/images/P1.png');
+      background-image: url('../src/assets/images/P1.png');
     }
     25% {
-      background: url('../src/assets/images/P2.png');
+      background-image: url('../src/assets/images/P2.png');
     }
     50% {
-      background: url('../src/assets/images/P3.png');
+      background-image: url('../src/assets/images/P3.png');
     }
     75% {
-      background: url('../src/assets/images/P4.png');
+      background-image: url('../src/assets/images/P4.png');
     }
     100% {
-      background: url('../src/assets/images/P1.png');
+      background-image: url('../src/assets/images/P1.png');
     }
-  }  */
+  } 
 }
 .bg-blured {
   backdrop-filter: blur(40px) brightness(200%);
@@ -127,3 +128,4 @@
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #fff;
 }
+

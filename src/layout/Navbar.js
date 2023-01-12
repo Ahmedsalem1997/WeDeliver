@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="container relative mx-auto px-8 lg:px-16 py-6">
+    <nav className="container relative mx-auto px-8 lg:px-16 py-6 z-10">
       <div className="flex items-center justify-between my-6">
         <div className="z-30">
           <img src={Logo} alt="WeDeliver" id="logo" className="w-32" />
