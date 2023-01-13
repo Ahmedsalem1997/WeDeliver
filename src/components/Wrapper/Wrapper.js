@@ -1,6 +1,6 @@
 import {IntlProvider} from 'react-intl';
-import Arabic from '../../assets/json/ar.json';
-import English from '../../assets/json/en.json';
+import English from '../../lang/en.json';
+import Arabic from '../../lang/ar.json';
 import React, { useState, createContext } from "react";
 
 export const Context = createContext();

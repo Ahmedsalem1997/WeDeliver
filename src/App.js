@@ -1,6 +1,6 @@
 import Wrapper from "./components/Wrapper/Wrapper";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 import DriveToOwn from "./pages/DriveToOwn";
 
 function App() {

@@ -1,33 +1,48 @@
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
+import { FormattedMessage } from "react-intl";
 
 const DriveToOwn = () => {
   return (
     <>
       <Navbar />
-      <div className="drive-section gradientOrange">
-        <h2 className="text-gray-900 text-3xl font-bold text-center mt-16 mb-4 lg:text-4xl leading-10">
-          Drive it. Own it.
+      <div className="drive-section gradientOrange pt-10">
+        <h2 className="text-gray-900 text-3xl font-bold text-center mb-4 lg:text-4xl leading-10">
+          <FormattedMessage
+            id="driveToOwn.heading"
+            defaultMessage="driveToOwn.heading"
+          />
         </h2>
         <p className="text-gray-600 text-center">
-          Join the WeDeliver community and begin your journey towards owning
-          your vehicle and starting your business today.
+          <FormattedMessage
+            id="driveToOwn.subHeading"
+            defaultMessage="driveToOwn.subHeading"
+          />
         </p>
       </div>
       <div className="cars-view container mx-auto px-8 lg:px-16">
         <div className="flex my-8 justify-between">
           <h3 className="font-bold text-gray-900 text-left rtl:lg:text-right lg:text-2xl">
-            Cars
+            <FormattedMessage
+              id="driveToOwn.cars"
+              defaultMessage="driveToOwn.cars"
+            />
           </h3>
           <div className="flex justify-between space-s-5">
             <select className="form-select navbar__language text-start bg-transparent border-0 text-black font-bold w-32">
               <option className="text-black" value={"en"}>
-                Country
+                <FormattedMessage
+                  id="driveToOwn.country"
+                  defaultMessage="driveToOwn.country"
+                />
               </option>
             </select>
             <select className="form-select navbar__language text-start bg-transparent border-0 text-black font-bold w-32">
               <option className="text-black" value={"en"}>
-                City
+                <FormattedMessage
+                  id="driveToOwn.city"
+                  defaultMessage="driveToOwn.city"
+                />
               </option>
             </select>
           </div>

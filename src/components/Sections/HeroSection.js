@@ -4,8 +4,8 @@ import { FormattedMessage } from "react-intl";
 
 const HeroSection = () => {
   return (
-    <div className="bg-dark mt-[-8rem]">
-      <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0 lg:h-screen relative pt-[8rem]">
+    <div className="bg-dark">
+      <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0 lg:h-[90vh] relative">
         <div className="flex flex-col lg:w-1/2 min-h-[21rem]">
           <h2 className="text-white text-3xl font-bold text-center mt-16 lg:text-4xl lg:text-left lg:rtl:text-right leading-10">
             <FormattedMessage

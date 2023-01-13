@@ -20,7 +20,7 @@
   [dir=rtl] .hero-backg {
     background-position-x: 5%, 50%;
   }
-  
+
   p {
     font-size: 15px;
   }
@@ -29,20 +29,25 @@
     0% {
       background-image: url('../src/assets/images/P1.png');
     }
+
     25% {
       background-image: url('../src/assets/images/P2.png');
     }
+
     50% {
       background-image: url('../src/assets/images/P3.png');
     }
+
     75% {
       background-image: url('../src/assets/images/P4.png');
     }
+
     100% {
       background-image: url('../src/assets/images/P1.png');
     }
-  } 
+  }
 }
+
 .bg-blured {
   backdrop-filter: blur(40px) brightness(200%);
 }
@@ -53,8 +58,9 @@
 }
 
 .gradientOrange {
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(250,171,24,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(250, 171, 24, 1) 0%, rgba(252, 212, 137, 1) 100%);
 }
+
 .drive-section {
   height: 60vh;
 }
@@ -67,18 +73,19 @@
 .icon-card {
   border: 3px solid #fbfbfc;
 }
+
 .icon-card:hover {
   border-color: #fff !important;
   box-shadow: 0px 30px 80px -30px rgb(193 199 212 / 40%);
   transition: box-shadow 0.3s;
 }
+
 .car-gradient-box {
-  background: linear-gradient(30deg,var(--paletteColor4,#191919) 32%,var(--paletteColor1,#f9ab1a) 100%) !important;
+  background: linear-gradient(30deg, var(--paletteColor4, #191919) 32%, var(--paletteColor1, #f9ab1a) 100%) !important;
 }
 
 .ficon:hover {
-  filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
-    brightness(101%) contrast(96%);
+  filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg) brightness(101%) contrast(96%);
 }
 
 /* HAMBURGER MENU */
@@ -135,4 +142,3 @@
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #fff;
 }
-
