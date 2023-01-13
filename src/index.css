@@ -52,6 +52,13 @@
   @apply bg-darkBg;
 }
 
+.gradientOrange {
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(250,171,24,1) 0%, rgba(255,255,255,1) 100%);
+}
+.drive-section {
+  height: 60vh;
+}
+
 .background-wedeliver {
   background-image: url('../src/assets/images/wedeliver.png');
   background-size: cover;
