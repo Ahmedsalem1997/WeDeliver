@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
     <Wrapper>
       <Routes>
-      <Route path="/" element={<DriveToOwn />} />
+      <Route path="/" element={<Home />} />
       </Routes>
     </Wrapper>
     </BrowserRouter>

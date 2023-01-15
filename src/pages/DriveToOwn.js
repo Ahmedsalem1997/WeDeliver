@@ -48,7 +48,7 @@ const DriveToOwn = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-lg my-4 p-8 pt-0 h-80 w-80 transition ease-linear duration-200">
+          <div className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-md my-4 p-8 pt-0 h-80 w-80 transition ease-linear duration-200">
             <div className="card-heading">
               <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">
                 Huyndai Accent
