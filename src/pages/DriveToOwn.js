@@ -125,9 +125,9 @@ const DriveToOwn = () => {
             </select>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {cars.map((vehicle) => (
-            <div className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-md my-4 p-8 pt-0 h-80 w-80 transition ease-linear duration-200" key={vehicle.id}>
+            <div className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-md my-4 p-8 pt-0 h-80 w-full transition ease-linear duration-200" key={vehicle.id}>
               <div className="card-heading">
                 <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">
                   {vehicle.vehicle.manufacturer_model.manufacturer.manufacturer_name_en} {vehicle.vehicle.manufacturer_model.manufacturer_model_name_ar}
