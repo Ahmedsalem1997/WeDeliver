@@ -14,6 +14,7 @@ const DriveToOwn = () => {
     fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
       .then(response => response.json())
       .then(data => setCountries(data))
+      .catch(console.log("error in api call"))
   }, []);
 
   const countryChangeHandler = (e) => {
@@ -21,6 +22,7 @@ const DriveToOwn = () => {
     fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
       .then(response => response.json())
       .then(data => setCities(data))
+      .catch(console.log("error in api call"))
   }
 
   const cityChangehandler = (e) => {
