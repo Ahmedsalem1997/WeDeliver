@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import VehiclesContext from '../../context/vehicles/VehiclesContext';
+import { Link } from "react-router-dom";
+
 
 const VehiclesSection = () => {
     const { filteredCars, fetchVehicles } = useContext(VehiclesContext);
@@ -12,7 +14,7 @@ const VehiclesSection = () => {
     return (
         <>
             {filteredCars.map((vehicle) => (
-                <div className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-md my-4 p-8 pt-0 h-80 w-full transition ease-linear duration-200" key={vehicle.id}>
+                <Link className="shadow-xl hover:shadow-md flex flex-col justify-between rounded-md my-4 p-8 pt-0 h-80 w-full transition ease-linear duration-200" key={vehicle.id} to={`/singlevehicle/${vehicle.id}`}>
                     <div className="card-heading">
                         <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">
                             {vehicle.vehicle.manufacturer_model.manufacturer.manufacturer_name_en} {vehicle.vehicle.manufacturer_model.manufacturer_model_name_ar}
@@ -56,7 +58,7 @@ const VehiclesSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Link>
             ))}
         </>
     )

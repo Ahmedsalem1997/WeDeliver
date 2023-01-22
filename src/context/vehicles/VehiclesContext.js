@@ -50,7 +50,6 @@ export const VehiclesProvider = ({ children }) => {
 
     }
 
-
     const countryChangeHandler = (e) => {
         setCountryId(e.target.value);
         fetchCities();
@@ -59,33 +58,6 @@ export const VehiclesProvider = ({ children }) => {
     const cityChangehandler = (e) => {
         setCityId(e.target.value);
         filterVechiles();
-        // setRequestOptions({
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({
-        //         "filters":
-        //         {
-        //             "country_id":
-        //             {
-        //                 "filterType": "int",
-        //                 "filterValue": countryId,
-        //                 "filterOperator": "="
-        //             },
-        //             "city_id":
-        //             {
-        //                 "filterType": "int",
-        //                 "filterValue": cityId,
-        //                 "filterOperator": "="
-        //             }
-
-        //         },
-        //         "page": null,
-        //         "per_page": null,
-        //         "order_by": "asc"
-        //     }
-        //     )
-        // });
-        // fetchVehicles()
     }
 
     return <VehiclesContext.Provider value={{
