@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import Logo from "../assets/images/logo.png";
-import { Context } from "../components/Wrapper/Wrapper";
+import { Context } from "../context/Wrapper/Wrapper";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
