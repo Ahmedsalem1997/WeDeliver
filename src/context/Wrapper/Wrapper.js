@@ -12,21 +12,23 @@ const Wrapper = (props) => {
     const [locale, setLocale] = useState(local);
     const [messages, setMessages] = useState(lang);
 
-    const selectLanguage = (e) => {
-        const newLocale = e.target.value;
-        const htmlPage = document.getElementById("page");
-        setLocale(newLocale);
-        if(newLocale === "ar") {
-            setMessages(Arabic);
-            htmlPage.setAttribute('dir', 'rtl');
-        } else {
+
+    const switchLanguage = () => {
+        const htmlP = document.getElementById("page");
+        if(messages === Arabic) {
             setMessages(English);
-            htmlPage.setAttribute('dir', 'ltr');
+            htmlP.setAttribute('dir', 'ltr');
+            setLocale("en")
+        }
+        else {
+            setMessages(Arabic);
+            htmlP.setAttribute('dir', 'rtl');
+            setLocale("ar")
         }
     }
 
     return (
-        <Context.Provider value = {{locale, selectLanguage}}>
+        <Context.Provider value = {{locale, switchLanguage}}>
             <IntlProvider messages={messages} locale={locale}>
                 {props.children}
             </IntlProvider>

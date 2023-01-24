@@ -14,7 +14,7 @@ const DriveToOwn = () => {
 
   useEffect(() => {
     fetchCities()
-  }, [countryChangeHandler]);
+  }, [countries]);
 
   return (
     <>

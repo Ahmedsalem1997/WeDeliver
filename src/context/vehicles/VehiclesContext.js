@@ -32,17 +32,17 @@ export const VehiclesProvider = ({ children }) => {
     }
 
     const fetchCountries = () => {
-        fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
-            .then(response => response.json())
-            .then(data => setCountries(data))
+        // fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
+        //     .then(response => response.json())
+        //     .then(data => setCountries(data))
     }
 
     const fetchCities = () => {
-        if (countryId) {
-            fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
-                .then(response => response.json())
-                .then(data => setCities(data))
-        }
+        // if (countryId) {
+        //     fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
+        //         .then(response => response.json())
+        //         .then(data => setCities(data))
+        // }
     }
 
     const filterVechiles = () => {

@@ -5,8 +5,8 @@ import { FormattedMessage } from "react-intl";
 const HeroSection = () => {
   return (
     <div className="bg-dark">
-      <div className="container mx-auto px-8 lg:px-16 hero-backg pb-8 lg:pb-0 lg:h-[90vh] relative">
-        <div className="flex flex-col lg:w-1/2 min-h-[21rem]">
+      <div className="container mx-auto px-8 lg:px-12 hero-backg pb-8 lg:pb-0 lg:h-[90vh] relative">
+        <div className="flex flex-col justify-center lg:w-1/2 min-h-[21rem]">
           <h2 className="text-white text-3xl font-bold text-center mt-16 lg:text-4xl lg:text-left lg:rtl:text-right leading-10">
             <FormattedMessage
               id="homePage.heroSection.heading"
@@ -26,7 +26,7 @@ const HeroSection = () => {
             />
           </button>
         </div>
-        <div className="lg:flex space-y-12 py-8 lg:py-10 lg:px-8 lg:space-y-0 lg:space-x-10 lg:mx-16 my-16 mb-8 lg:mt-16 bg-blurBg bg-blured rounded-xl lg:absolute lg:bottom-6 lg:w-100 lg:left-0 lg:right-0">
+        <div className="lg:flex space-y-12 py-8 lg:py-10 lg:px-6 lg:space-y-0 lg:space-x-10 lg:mx-16 my-16 mb-8 lg:mt-16 bg-blurBg bg-blured rounded-xl lg:absolute lg:bottom-6 lg:w-100 lg:left-0 lg:right-0">
           <div className="lg:w-1/4 lg:flex justify-center lg:space-s-3">
             <div className="hero-icon flex justify-center">
               <FaHandshake color="white" size={"44px"} />

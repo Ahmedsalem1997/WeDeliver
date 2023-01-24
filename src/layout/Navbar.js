@@ -15,13 +15,12 @@ const Navbar = () => {
 
   return (
     <div className="bg-dark">
-      <nav className="container relative mx-auto px-8 lg:px-16 py-4 z-10">
+      <nav className="container relative mx-auto px-8 lg:px-12 py-4 z-10">
         <div className="flex items-center justify-between my-4">
           <div className="z-30">
             <img src={Logo} alt="WeDeliver" id="logo" className="w-32" />
           </div>
-
-          <div className="hidden items-center space-s-10 font-semibold text-grayishBlue md:flex">
+          <div className="hidden items-center space-s-10 md:flex">
             {links.mainNav.map((link) => {
               return (
                 <Link
@@ -36,18 +35,12 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <select
-              value={context.locale}
-              onChange={context.selectLanguage}
-              className="form-select navbar__language w-auto text-start bg-transparent border-0 text-white font-bold"
+            <button 
+              className="text-white"
+              onClick={context.switchLanguage}
             >
-              <option className="text-black" value={"en"}>
-                ENGLISH
-              </option>
-              <option className="text-black" value={"ar"}>
-                العربية
-              </option>
-            </select>
+              {context.locale === "ar" ? 'English': 'بالعربي'}
+            </button>
           </div>
           <button
             id="menu-btnp"
@@ -68,11 +61,10 @@ const Navbar = () => {
           >
             {links.mainNav.map((link) => {
               return (
-                <div className="w-full py-3 text-left">
+                <div className="w-full py-3 text-left" key={link.id}>
                   <Link
                     className="block hover:text-mainOrange"
                     to={link.link}
-                    key={link.id}
                   >
                     <FormattedMessage
                       id={`mainNav.${link.name}`}
