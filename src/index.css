@@ -136,9 +136,7 @@
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
-  position: fixed;
-  top: 50px;
-  right: 25px;
+  position: relative;
 }
 
 .open .hamburger-top {

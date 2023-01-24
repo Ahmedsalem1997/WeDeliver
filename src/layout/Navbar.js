@@ -57,11 +57,11 @@ const Navbar = () => {
         {menuToggle && (
           <div
             id="menu"
-            className="fixed inset-0 z-20 flex-col items-left self-end w-5/6 h-full m-h-screen px-10 py-1 pt-32 pb-4 text-white bg-darkBg opacity-95"
+            className={`fixed inset-0 z-20 flex-col items-left self-end w-5/6 h-full m-h-screen px-10 py-1 pt-32 pb-4 text-white bg-darkBg opacity-95`}
           >
             {links.mainNav.map((link) => {
               return (
-                <div className="w-full py-3 text-left" key={link.id}>
+                <div className={`w-full py-3 ${context.locale === "ar" ? 'text-right': 'text-left'}`} key={link.id}>
                   <Link
                     className="block hover:text-mainOrange"
                     to={link.link}
@@ -74,6 +74,12 @@ const Navbar = () => {
                 </div>
               );
             })}
+            <button 
+              className={`text-white py-3 ${context.locale === "ar" ? 'text-right': 'text-left'}`}
+              onClick={context.switchLanguage}
+            >
+              {context.locale === "ar" ? 'English': 'بالعربي'}
+            </button>
           </div>
         )}
       </nav>
