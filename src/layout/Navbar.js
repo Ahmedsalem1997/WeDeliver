@@ -39,7 +39,7 @@ const Navbar = () => {
               className="text-white"
               onClick={context.switchLanguage}
             >
-              {context.locale === "ar" ? 'English': 'بالعربي'}
+              {context.locale === "ar" ? 'English': 'العربية'}
             </button>
           </div>
           <button
@@ -78,7 +78,7 @@ const Navbar = () => {
               className={`text-white py-3 ${context.locale === "ar" ? 'text-right': 'text-left'}`}
               onClick={context.switchLanguage}
             >
-              {context.locale === "ar" ? 'English': 'بالعربي'}
+              {context.locale === "ar" ? 'English': 'العربية'}
             </button>
           </div>
         )}

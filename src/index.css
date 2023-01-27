@@ -69,6 +69,10 @@
   @apply bg-darkBg;
 }
 
+.box-card {
+  @apply shadow-xl hover:shadow-md flex flex-col rounded-md my-4 p-8 h-80 w-full transition ease-linear duration-200
+}
+
 .gradientOrange {
   background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(250, 171, 24, 1) 0%, rgba(252, 212, 137, 1) 100%);
 }
@@ -108,6 +112,10 @@
   height: 24px;
   transition: all 0.25s;
   position: relative;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
 }
 
 .hamburger-top,

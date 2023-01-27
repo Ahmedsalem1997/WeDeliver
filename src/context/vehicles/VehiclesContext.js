@@ -4,6 +4,8 @@ const VehiclesContext = createContext();
 
 export const VehiclesProvider = ({ children }) => {
     const [cars, setCars] = useState([]);
+    const [bikes, setBikes] = useState([]);
+    const [filteredBikes, setFilteredBikes] = useState([]);
     const [countries, setCountries] = useState([]);
     const [cities, setCities] = useState([]);
     const [countryId, setCountryId] = useState();
@@ -26,23 +28,25 @@ export const VehiclesProvider = ({ children }) => {
             .then(response => response.json())
             .then(items => {
                 setCars(items.data.cars);
+                setBikes(items.data.bikes);
+                setFilteredBikes(items.data.bikes)
                 setFilteredCars(items.data.cars);
             });
 
     }
 
     const fetchCountries = () => {
-        // fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
-        //     .then(response => response.json())
-        //     .then(data => setCountries(data))
+        fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
+            .then(response => response.json())
+            .then(data => setCountries(data))
     }
 
     const fetchCities = () => {
-        // if (countryId) {
-        //     fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
-        //         .then(response => response.json())
-        //         .then(data => setCities(data))
-        // }
+        if (countryId) {
+            fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
+                .then(response => response.json())
+                .then(data => setCities(data))
+        }
     }
 
     const filterVechiles = () => {
@@ -66,6 +70,8 @@ export const VehiclesProvider = ({ children }) => {
         cities,
         filteredCars,
         countryId,
+        bikes, 
+        filteredBikes,
         fetchVehicles,
         fetchCountries,
         fetchCities,
