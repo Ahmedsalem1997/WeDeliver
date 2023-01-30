@@ -104,6 +104,22 @@
   filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg) brightness(101%) contrast(96%);
 }
 
+.tab {
+  @apply -mb-px border-b border-transparent p-4 hover:text-mainOrange;
+}
+
+.tab-active {
+  @apply border-current text-mainOrange;
+}
+
+.content {
+  @apply hidden mt-5;
+}
+
+.content-active {
+  @apply flex justify-center;
+}
+
 /* HAMBURGER MENU */
 
 .hamburger {
@@ -159,4 +175,92 @@ input:focus, textarea:focus, select:focus{
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #fff;
+}
+
+/* stepper */
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+      font-size: 12px;
+  }
+}
+
+.step-name {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.stepper-item.completed::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px dashed var(#fff);
+  width: 100%;
+  top: 40px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px dashed #fff;
+  width: 100%;
+  top: 40px;
+  left: 50%;
+  z-index: 2;
+}
+
+[dir=rtl] .stepper-item.completed::before {
+  left: 0;
+  right: -50%;
+}
+
+[dir=rtl] .stepper-item::after {
+  left: 0;
+  right: 50%;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  border: 7px #f3d09a solid;
+  margin-bottom: 6px;
+}
+
+.stepper-item.completed .step-counter {
+  border: 5px solid var(#ccc);
+  background: white;
+}
+
+.stepper-item.completed .step-counter img {
+  filter: none;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+
+.stepper-item:last-child::after {
+  content: none;
 }

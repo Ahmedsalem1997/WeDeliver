@@ -4,6 +4,7 @@ import DriveWithUs from "../components/Sections/DriveWithUs";
 import { GiCarWheel } from "react-icons/gi";
 import { AiFillCar } from "react-icons/ai";
 import { HiOutlineUserAdd } from "react-icons/hi";
+import { Skeleton } from "antd";
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
 
@@ -12,15 +13,22 @@ const SingleVehicle = () => {
   const [featuredImage, setFeaturedImage] = useState(
     singleVehicle?.images?.[0]?.url
   );
+  const [loading, setLoading] = useState(true);
 
   const params = useParams();
 
-  useEffect(() => {
+  const fetchSingleVehicle = () => {
     fetch(
       `https://fintech.services.wedeliverapp.com/api/v1/vehicle/${params.id}`
     )
       .then((response) => response.json())
       .then((data) => setSingleVehicle(data));
+  };
+
+  useEffect(() => {
+    fetchSingleVehicle();
+    setLoading(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.id]);
 
   const changeImageHandler = (image) => {
@@ -33,13 +41,15 @@ const SingleVehicle = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-32 pt-6 mx-auto flex flex-wrap">
           <div className="flex w-full mb-5 justify-between">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 self-center">
-              {
-                singleVehicle?.manufacturer_model?.manufacturer
-                  ?.manufacturer_name_en
-              }{" "}
-              {singleVehicle?.manufacturer_model?.manufacturer_model_name_en}
-            </h1>
+            <Skeleton active loading={loading} paragraph={{ rows: 1 }}>
+              <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 self-center">
+                {
+                  singleVehicle?.manufacturer_model?.manufacturer
+                    ?.manufacturer_name_en
+                }{" "}
+                {singleVehicle?.manufacturer_model?.manufacturer_model_name_en}
+              </h1>
+            </Skeleton>
             <div className="flex justify-between gap-x-4">
               <button className="p-4 w-44 text-sm font-medium mx-auto lg:mx-0 text-mainOrange border border-mainOrange rounded md:text-base">
                 Rent to Drive
@@ -59,21 +69,29 @@ const SingleVehicle = () => {
                   key={image?.id}
                   onClick={() => changeImageHandler(image)}
                 >
-                  <img
-                    alt="gallery"
-                    className={`max-w-[12rem] object-cover h-full object-center block rounded-md border-2 hover:border-mainOrange`}
-                    src={image?.url}
-                  />
+                  {loading ? (
+                    <Skeleton.Image active loading={loading}></Skeleton.Image>
+                  ) : (
+                    <img
+                      alt="gallery"
+                      className={`max-w-[12rem] object-cover h-full object-center block rounded-md border-2 hover:border-mainOrange`}
+                      src={image?.url}
+                    />
+                  )}
                 </button>
               ))}
             </div>
-            <div className="flex flex-wrap w-full">
+            <div className="flex flex-wrap w-full justify-between">
               <div className="w-full">
-                <img
-                  alt="gallery"
-                  className="h-auto w-[65rem] object-contain object-center block"
-                  src={`${featuredImage || singleVehicle?.images?.[0]?.url}`}
-                />
+                {loading ? (
+                  <Skeleton.Image active loading={loading}></Skeleton.Image>
+                ) : (
+                  <img
+                    alt="gallery"
+                    className="h-auto w-[65rem] object-contain object-center block"
+                    src={`${featuredImage || singleVehicle?.images?.[0]?.url}`}
+                  />
+                )}
               </div>
             </div>
           </div>

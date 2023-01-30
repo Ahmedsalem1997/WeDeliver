@@ -1,86 +1,109 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from "react";
 
 const VehiclesContext = createContext();
 
 export const VehiclesProvider = ({ children }) => {
-    const [cars, setCars] = useState([]);
-    const [bikes, setBikes] = useState([]);
-    const [filteredBikes, setFilteredBikes] = useState([]);
-    const [countries, setCountries] = useState([]);
-    const [cities, setCities] = useState([]);
-    const [countryId, setCountryId] = useState();
-    const [cityId, setCityId] = useState();
-    const [filteredCars, setFilteredCars] = useState(cars);
+  const [cars, setCars] = useState([]);
+  const [bikes, setBikes] = useState([]);
+  const [filteredBikes, setFilteredBikes] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [cities, setCities] = useState([]);
+  const [countryId, setCountryId] = useState();
+  const [cityId, setCityId] = useState();
+  const [filteredCars, setFilteredCars] = useState(cars);
 
-    const fetchVehicles = () => {
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                "filters": {},
-                "page": null,
-                "per_page": null,
-                "order_by": "asc"
-            }
-            )
-        }
-        fetch('https://fintech.services.wedeliverapp.com/api/v1/public/vehicles', requestOptions)
-            .then(response => response.json())
-            .then(items => {
-                setCars(items.data.cars);
-                setBikes(items.data.bikes);
-                setFilteredBikes(items.data.bikes)
-                setFilteredCars(items.data.cars);
-            });
+  const requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
 
+
+  const fetchVehicles = () => {
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        filters: {},
+        page: null,
+        per_page: null,
+        order_by: "asc",
+      }),
+    };
+    fetch(
+      "https://fintech.services.wedeliverapp.com/api/v1/public/vehicles",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((items) => {
+        setCars(items.data.cars);
+        setBikes(items.data.bikes);
+        setFilteredBikes(items.data.bikes);
+        setFilteredCars(items.data.cars);
+      });
+  };
+
+  const fetchCountries = () => {
+    fetch(
+      "https://fintech.services.wedeliverapp.com/api/v1/countries/",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => setCountries(result))
+      .catch((error) => console.log("error", error));
+  };
+
+  const fetchCities = () => {
+    if (countryId) {
+      fetch(
+        `https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`, requestOptions)
+        .then((response) => response.json())
+        .then((data) => setCities(data));
     }
+  };
 
-    const fetchCountries = () => {
-        fetch('https://fintech.services.wedeliverapp.com/api/v1/countries')
-            .then(response => response.json())
-            .then(data => setCountries(data))
-    }
+  const filterVechiles = () => {
+    // setFilteredCars(
+    //   cars.filter(
+    //     (car) => car.country_id === countryId && car.city_id === cityId
+    //   )
+    // );
+    // setFilteredBikes(
+    //   bikes.filter(
+    //     (bike) => bike.country_id === countryId && bike.city_id === cityId
+    //   )
+    // )
+  };
 
-    const fetchCities = () => {
-        if (countryId) {
-            fetch(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)
-                .then(response => response.json())
-                .then(data => setCities(data))
-        }
-    }
+  const countryChangeHandler = (e) => {
+    setCountryId(e.target.value);
+    fetchCities();
+  };
 
-    const filterVechiles = () => {
-        setFilteredCars(cars.filter(car => car.country_id === countryId && car.city_id === cityId));
+  const cityChangehandler = (e) => {
+    setCityId(e.target.value);
+    filterVechiles();
+  };
 
-    }
-
-    const countryChangeHandler = (e) => {
-        setCountryId(e.target.value);
-        fetchCities();
-    }
-
-    const cityChangehandler = (e) => {
-        setCityId(e.target.value);
-        filterVechiles();
-    }
-
-    return <VehiclesContext.Provider value={{
+  return (
+    <VehiclesContext.Provider
+      value={{
         cars,
         countries,
         cities,
         filteredCars,
         countryId,
-        bikes, 
+        bikes,
         filteredBikes,
         fetchVehicles,
         fetchCountries,
         fetchCities,
         countryChangeHandler,
-        cityChangehandler
-
-    }}>
-        {children}
+        cityChangehandler,
+      }}
+    >
+      {children}
     </VehiclesContext.Provider>
-}
+  );
+};
 
 export default VehiclesContext;

@@ -7,7 +7,8 @@ const CarsSection = () => {
 
   useEffect(() => {
     fetchVehicles();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
       <Vehicles cars={filteredCars} />
