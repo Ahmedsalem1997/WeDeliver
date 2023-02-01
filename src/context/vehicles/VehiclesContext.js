@@ -37,9 +37,9 @@ export const VehiclesProvider = ({ children }) => {
       .then((response) => response.json())
       .then((items) => {
         setCars(items.data.cars);
+        setFilteredCars(items.data.cars);
         setBikes(items.data.bikes);
         setFilteredBikes(items.data.bikes);
-        setFilteredCars(items.data.cars);
         setLoading(false);
       });
   };
