@@ -70,7 +70,7 @@
 }
 
 .box-card {
-  @apply shadow-xl hover:shadow-md flex flex-col rounded-md my-4 p-8 h-80 w-full transition ease-linear duration-200
+  @apply flex flex-col justify-between rounded-sm bg-white p-8 shadow-xl transition-shadow hover:shadow-lg w-[22rem];
 }
 
 .gradientOrange {
@@ -118,6 +118,10 @@
 
 .content-active {
   @apply flex justify-center;
+}
+
+section {
+  @apply px-6 lg:px-20;
 }
 
 /* HAMBURGER MENU */

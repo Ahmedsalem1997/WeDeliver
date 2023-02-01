@@ -10,6 +10,7 @@ export const VehiclesProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
   const [countryId, setCountryId] = useState();
   const [cityId, setCityId] = useState();
+  const [loading, setLoading] = useState(true);
   const [filteredCars, setFilteredCars] = useState(cars);
 
   const requestOptions = {
@@ -39,6 +40,7 @@ export const VehiclesProvider = ({ children }) => {
         setBikes(items.data.bikes);
         setFilteredBikes(items.data.bikes);
         setFilteredCars(items.data.cars);
+        setLoading(false);
       });
   };
 
@@ -48,7 +50,9 @@ export const VehiclesProvider = ({ children }) => {
       requestOptions
     )
       .then((response) => response.json())
-      .then((result) => setCountries(result))
+      .then((result) => {
+        setCountries(result);
+      })
       .catch((error) => console.log("error", error));
   };
 
@@ -57,7 +61,9 @@ export const VehiclesProvider = ({ children }) => {
       fetch(
         `https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`, requestOptions)
         .then((response) => response.json())
-        .then((data) => setCities(data));
+        .then((data) => {
+          setCities(data)
+        });
     }
   };
 
@@ -92,6 +98,8 @@ export const VehiclesProvider = ({ children }) => {
         cities,
         filteredCars,
         countryId,
+        cityId,
+        loading,
         bikes,
         filteredBikes,
         fetchVehicles,

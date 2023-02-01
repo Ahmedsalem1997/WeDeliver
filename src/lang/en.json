@@ -62,6 +62,14 @@
     "driveToOwn.country": "Country",
     "driveToOwn.city": "City",
 
+    "tabs.withUs": "With us",
+    "tabs.withoutUs": "Without us",
+
+    "driveWithUs.title": "Drive with us",
+    "driveWithUs.subtitle": "Explore our selection of vehicles and learn about the options that are available to you based on your location.",
+    "driveWithUs.apply": "Apply to drive",
+    "driveWithUs.getOnboarded": "Get onboarded",
+
     "footer.about": "On a mission to help the mobility gig economy thrives in the emerging markets.",
     "footer.company": "Company",
     "footer.help": "Get Help",

@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl";
 const HeroSection = () => {
   return (
     <div className="bg-dark">
-      <div className="container mx-auto px-8 lg:px-12 hero-backg pb-8 lg:pb-0 lg:h-[90vh] relative">
+      <section className="container mx-auto px-8 lg:px-20 hero-backg pb-8 lg:pb-0 lg:h-[90vh] relative">
         <div className="flex flex-col justify-center lg:w-1/2 min-h-[21rem]">
           <h2 className="text-white text-3xl font-bold text-center mt-16 lg:text-4xl lg:text-left lg:rtl:text-right leading-10">
             <FormattedMessage
@@ -104,7 +104,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

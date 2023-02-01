@@ -4,6 +4,8 @@ import Tabs from "../Tabs";
 const BoxesSection = () => {
   return (
       <div className="container mx-auto p-4 lg:pb-12">
+        {/* tabs */}
+        <Tabs />
         <h2 className="text-2xl font-bold text-center mt-16 lg:text-3xl leading-10 px-16">
           <FormattedMessage
             id="homePage.boxesSection.heading"
@@ -97,8 +99,6 @@ const BoxesSection = () => {
             </div>
           </div>
         </div>
-        {/* tabs */}
-        <Tabs />
         {/* choose your vehicle */}
         <div className="car-gradient-box lg:flex rounded-xl lg:px-12 px-8 justify-between m-4 lg:mx-16 py-4 lg:h-80">
           <div className="lg:w-1/2 self-center">

@@ -3,6 +3,7 @@ import Vehicles from "../Vehicles";
 import VehiclesContext from "../../context/vehicles/VehiclesContext";
 
 const BikesSection = () => {
+
   const { filteredBikes, fetchVehicles } = useContext(VehiclesContext);
 
   useEffect(() => {
@@ -10,7 +11,7 @@ const BikesSection = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+    <div className="lg:flex lg:justify-between">
       <Vehicles cars={filteredBikes} />
     </div>
   );

@@ -27,7 +27,7 @@
     "homePage.heroSection.feature4.title": "ساعات عمل مرنة",
     "homePage.heroSection.feature4.content": "ساعات عمل مرنة حدد أوقات عمل مناسبة لك",
 
-    "homePage.boxesSection.heading": "انضم إلى أسطولنا المتنامي واستمتع بأسهل طريقة لتكون مستقلاً ماليًا مع مسار لملكية السيارة في نفس الوقت.",
+    "homePage.boxesSection.heading": "خطوات قليلة لتكون كابتنًا وابدأ في الكسب معنا",
     "homePage.boxesSection.box1.title": "أشترك",
     "homePage.boxesSection.box1.content": "نحتاج إلى معلومات قليلة عنك ، وسيقوم فريقنا بالاتصال بك في غضون يومين.",
     "homePage.boxesSection.box2.title": "الحصول على التحقق",
@@ -60,6 +60,14 @@
     "driveToOwn.bikes": "الدراجات",
     "driveToOwn.country": "البلد",
     "driveToOwn.city": "المدينة",
+
+    "tabs.withUs": "معنا",
+    "tabs.withoutUs": "بدوننا",
+
+    "driveWithUs.title": "قود معنا",
+    "driveWithUs.subtitle": "استكشف مجموعتنا المختارة من السيارات وتعرف على الخيارات المتاحة لك بناءً على موقعك.",
+    "driveWithUs.apply": "قدم اوراقك",
+    "driveWithUs.getOnboarded": "انضم إلينا",
 
     "footer.about": "في مهمة لمساعدة اقتصاد أزمات التنقل في الأسواق الناشئة.",
     "footer.company": "الشركة",

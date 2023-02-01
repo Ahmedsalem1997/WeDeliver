@@ -34,7 +34,7 @@ const Tabs = () => {
         ))}
       </nav>
       {tabs.map((tab) => (
-        <div key={tab.id} className="content-tabs container mx-auto">
+        <div key={tab.id} className="content-tabs container mx-auto px-12">
           <div
             className={
               toggleState === tab.id ? "content content-active" : "content"

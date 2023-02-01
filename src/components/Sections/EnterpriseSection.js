@@ -4,7 +4,7 @@ const EnterpriseSection = () => {
   return (
     <>
       <div className="bg-dark">
-        <div className="container mx-auto justify-around lg:px-8 px-4 lg:flex pt-16 pb-4">
+        <section className="container mx-auto justify-around px-4 lg:flex pt-16 pb-4">
           <div className="lg:w-1/2 self-center my-8">
             <img
               src={require(`../../assets/images/enterprise.jpg`)}
@@ -37,8 +37,8 @@ const EnterpriseSection = () => {
               />
             </button>
           </div>
-        </div>
-        <div className="partners-section grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-16 gap-y-12 container px-8 lg:px-16 mx-auto pb-16">
+        </section>
+        <section className="partners-section grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-16 gap-y-12 container px-8 mx-auto pb-16">
           <div className="w-1/6 self-center items-center">
             <img
               src={require(`../../assets/images/logos/amazon.png`)}
@@ -81,7 +81,7 @@ const EnterpriseSection = () => {
               alt="Car"
             />
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
