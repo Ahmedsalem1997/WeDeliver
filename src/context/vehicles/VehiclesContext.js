@@ -68,16 +68,16 @@ export const VehiclesProvider = ({ children }) => {
   };
 
   const filterVechiles = () => {
-    // setFilteredCars(
-    //   cars.filter(
-    //     (car) => car.country_id === countryId && car.city_id === cityId
-    //   )
-    // );
-    // setFilteredBikes(
-    //   bikes.filter(
-    //     (bike) => bike.country_id === countryId && bike.city_id === cityId
-    //   )
-    // )
+    setFilteredCars(
+      cars.filter(
+        (car) => car.country_id === countryId && car.city_id === cityId
+      )
+    );
+    setFilteredBikes(
+      bikes.filter(
+        (bike) => bike.country_id === countryId && bike.city_id === cityId
+      )
+    )
   };
 
   const countryChangeHandler = (e) => {

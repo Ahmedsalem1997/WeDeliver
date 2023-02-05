@@ -1,4 +1,5 @@
 import { FormattedMessage } from "react-intl";
+import { Link } from "react-router-dom";
 import Tabs from "../Tabs";
 
 const BoxesSection = () => {
@@ -114,12 +115,12 @@ const BoxesSection = () => {
                 defaultMessage="homePage.boxesSection.chooseBox.content"
               />
             </p>
-            <button className="p-4 w-full text-sm font-semibold text-white my-4 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
+            <Link to="/DriveToOwn" className="p-4 w-full text-sm font-semibold text-white my-4 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
               <FormattedMessage
                 id="homePage.boxesSection.chooseBox.button"
                 defaultMessage="homePage.boxesSection.chooseBox.button"
               />
-            </button>
+            </Link>
           </div>
           <div className="lg:w-1/3 self-center">
             <img src={require(`../../assets/images/aa.png`)} alt="Car" />

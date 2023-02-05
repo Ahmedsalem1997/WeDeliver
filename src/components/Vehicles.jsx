@@ -5,18 +5,17 @@ import { Skeleton } from "antd";
 
 const Vehicles = (props) => {
   const { loading } = useContext(VehiclesContext);
-  const n = 3;
   return (
     <>
       {loading ? (
-            [...Array(n)].map((e, i) => (<div className="box-card min-h-[18rem]" key={i}><Skeleton active/></div>))
+            [...Array(3)].map((e, i) => (<div className="box-card min-h-[18rem]" key={i}><Skeleton active/></div>))
       ) : (
         <>
           {props.cars.map((vehicle) => (
             <Link
               className="box-card justify-between"
               key={vehicle.id}
-              to={`/singlevehicle/${vehicle.id}`}
+              to={`/singlevehicle/${vehicle.vehicle.id}`}
             >
               <div className="card-heading">
                 <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">

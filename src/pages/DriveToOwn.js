@@ -45,12 +45,12 @@ const DriveToOwn = () => {
           />
         </p>
       </div>
-      <section className="cars-view container mx-auto px-8 lg:px-20">
-        <div className="lg:flex my-8 justify-between">
-          <h3 className="font-bold text-gray-900 text-left rtl:lg:text-right lg:text-2xl">
+      <section className="cars-view container mx-auto px-5 lg:px-20">
+        <div className="flex max-[600px]:flex-col-reverse my-4 lg:my-8 justify-between">
+          <h3 className="category-title">
             <FormattedMessage id="driveToOwn.cars" defaultMessage="Cars" />
           </h3>
-          <div className="lg:flex lg:justify-between lg:space-s-5 items-center">
+          <div className="flex lg:justify-between space-s-5 items-center">
             <select
               onChange={(e) => countryChangeHandler(e)}
               defaultValue="country"
@@ -86,8 +86,8 @@ const DriveToOwn = () => {
           </div>
         </div>
         <CarsSection />
-        <div className="my-4 mb-8">
-          <h3 className="font-bold text-gray-900 text-left rtl:lg:text-right lg:text-2xl mt-14 mb-8">
+        <div className="my-8">
+          <h3 className="category-title">
             <FormattedMessage id="driveToOwn.bikes" defaultMessage="Bikes" />
           </h3>
           <BikesSection />
