@@ -8,7 +8,7 @@ const BikesSection = () => {
   useEffect(() => {
     fetchVehicles();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [filteredBikes]);
   
   return (
     <div className="lg:flex lg:justify-between">
