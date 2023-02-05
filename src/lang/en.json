@@ -38,7 +38,7 @@
     "homePage.boxesSection.box4.content": "You will pay a weekly amount deducted from your earnings based on a up to 36 months plan with a clear path ownership.",
     "homePage.boxesSection.chooseBox.title": "Choose your Vehicle",
     "homePage.boxesSection.chooseBox.content": "Using our smart calculator, you will soon be able to estimate your earnings, choose your most suitable vehicles with flexible financing plan.",
-    "homePage.boxesSection.chooseBox.button": "Estimate your Earnings",
+    "homePage.boxesSection.chooseBox.button": "Select your Vehicle",
 
 
     "homePage.enterpriseSection.title": "Enterprise?",
@@ -69,6 +69,14 @@
     "driveWithUs.subtitle": "Explore our selection of vehicles and learn about the options that are available to you based on your location.",
     "driveWithUs.apply": "Apply to drive",
     "driveWithUs.getOnboarded": "Get onboarded",
+
+    "contact.title": "Contact Us",
+    "contact.subtitle": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi doloribus iure architecto quae voluptatum beatae excepturi dolores.",
+    "contact.content": "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.",
+    "contact.name": "Name",
+    "contact.email": "Email",
+    "contact.message": "Message",
+    "contact.submit": "Submit",
 
     "footer.about": "On a mission to help the mobility gig economy thrives in the emerging markets.",
     "footer.company": "Company",

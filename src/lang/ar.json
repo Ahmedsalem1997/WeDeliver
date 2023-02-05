@@ -38,7 +38,7 @@
     "homePage.boxesSection.box4.content": "ستدفع مبلغًا أسبوعيًا يُخصم من أرباحك بناءً على خطة تصل إلى 36 شهرًا مع ملكية مسار واضح.",
     "homePage.boxesSection.chooseBox.title": "اختر سيارتك",
     "homePage.boxesSection.chooseBox.content": "باستخدام الآلة الحاسبة الذكية الخاصة بنا ، ستتمكن قريبًا من تقدير أرباحك واختيار المركبات الأكثر ملاءمة لك مع خطة تمويل مرنة.",
-    "homePage.boxesSection.chooseBox.button": "إحسب أرباحك",
+    "homePage.boxesSection.chooseBox.button": "إختر سيارتك",
 
     "homePage.enterpriseSection.title": "شركة؟",
     "homePage.enterpriseSection.subtitle": "استمتع بحل الأسطول الخاص بنا",
@@ -68,6 +68,15 @@
     "driveWithUs.subtitle": "استكشف مجموعتنا المختارة من السيارات وتعرف على الخيارات المتاحة لك بناءً على موقعك.",
     "driveWithUs.apply": "قدم اوراقك",
     "driveWithUs.getOnboarded": "انضم إلينا",
+
+    "contact.title": "تواصل معنا",
+    "contact.subtitle": "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا",
+    "contact.content": "مهما كانت حقيبة حمل سترة من صوف محبوك تمبلر مسدس بروكلين غير متماثل.",
+    "contact.name": "الإسم",
+    "contact.email": "البريد الإلكتروني",
+    "contact.message": "المحتوى",
+    "contact.submit": "إرسال",
+
 
     "footer.about": "في مهمة لمساعدة اقتصاد أزمات التنقل في الأسواق الناشئة.",
     "footer.company": "الشركة",
