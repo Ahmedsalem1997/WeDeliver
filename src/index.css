@@ -250,3 +250,13 @@ input:focus, textarea:focus, select:focus{
 .stepper-item:last-child::after {
   content: none;
 }
+
+.from-right span, .from-bottom span, .from-left span {
+  display: block;
+  opacity: 0;
+}
+
+.animated span {
+  display: block;
+  opacity: 0;
+}

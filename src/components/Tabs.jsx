@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnimatedFadeIn from "./Animated/AnimatedFadeIn";
 
 const Tabs = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -24,12 +25,14 @@ const Tabs = () => {
       <nav className="flex border-b border-gray-100 text-md font-medium justify-center">
         {tabs.map((tab) => (
           <div key={tab.id}>
-            <button
-              className={toggleState === tab.id ? "tab tab-active" : "tab"}
-              onClick={() => toggleTab(tab.id)}
-            >
-              {tab.title}
-            </button>
+            <AnimatedFadeIn>
+              <button
+                className={toggleState === tab.id ? "tab tab-active" : "tab"}
+                onClick={() => toggleTab(tab.id)}
+              >
+                {tab.title}
+              </button>
+            </AnimatedFadeIn>
           </div>
         ))}
       </nav>
@@ -40,7 +43,9 @@ const Tabs = () => {
               toggleState === tab.id ? "content content-active" : "content"
             }
           >
-            <img className="lg:w-[60rem]" src={tab.content} alt="with us" />
+            <AnimatedFadeIn>
+              <img className="lg:w-[60rem]" src={tab.content} alt="with us" />
+            </AnimatedFadeIn>
           </div>
         </div>
       ))}
