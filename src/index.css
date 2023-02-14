@@ -14,36 +14,8 @@
     background-size: contain;
     opacity: 1;
     backface-visibility: hidden;
-    animation-name: slideBg;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    background-image: url('../src/assets/images/P4.png');
   }
 
-  @keyframes slideBg {
-    0% {
-      background-image: url('../src/assets/images/P1.png');
-    }
-
-    25% {
-      background-image: url('../src/assets/images/P2.png');
-    }
-
-    50% {
-      background-image: url('../src/assets/images/P3.png');
-    }
-
-    75% {
-      background-image: url('../src/assets/images/P4.png');
-    }
-
-    100% {
-      background-image: url('../src/assets/images/P1.png');
-    }
-  }
 
   [dir=rtl] .hero-backg {
     background-position-x: 5%, 50%;
