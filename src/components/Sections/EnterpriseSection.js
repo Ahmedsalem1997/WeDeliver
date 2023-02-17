@@ -43,7 +43,7 @@ const EnterpriseSection = () => {
           </div>
         </section>
         <AnimatedFadeIn>
-          <section className="partners-section grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-16 gap-y-12 container px-8 mx-auto pb-16">
+          <section className="partners-section grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-8 xl:gap-x-16 gap-y-12 container px-8 mx-auto pb-16">
             <div className="w-1/6 self-center items-center">
               <img
                 src={require(`../../assets/images/logos/amazon.png`)}

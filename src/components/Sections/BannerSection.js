@@ -9,7 +9,6 @@ const BannerSection = ({ page }) => {
           <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
             <FormattedMessage id={`${page}.title`} defaultMessage="Contact Us" />
           </h2>
-
           <p className="hidden max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed rtl:sm:text-right">
             <FormattedMessage id={`${page}.subtitle`} defaultMessage="Contact Us"
             />

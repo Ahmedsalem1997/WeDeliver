@@ -39,7 +39,7 @@ const SingleVehicle = () => {
     <>
       <Navbar />
       <section className="text-gray-600 body-font">
-        <div className="container lg:px-32 pt-6 mx-auto flex flex-wrap">
+        <div className="container lg:px-10 xl:px-32 pt-6 mx-auto flex flex-wrap">
           <div className="lg:flex w-full mb-5 justify-between">
             <Skeleton active loading={loading} paragraph={{ rows: 1 }}>
               <h1 className="sm:text-3xl text-2xl font-bold title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 self-center">
@@ -61,9 +61,9 @@ const SingleVehicle = () => {
           </div>
         </div>
         <hr />
-        <div className="container lg:px-32 pt-4 pb-10 mx-auto flex flex-wrap">
+        <div className="container lg:px-10 xl:px-32 pt-4 pb-10 mx-auto flex flex-wrap">
           <div className="flex max-[600px]:flex-col-reverse">
-            <div className="flex flex-col max-sm:w-1/4 gap-y-2">
+            <div className="flex justify-center mx-auto xl:flex-col max-sm:w-1/4 gap-y-2">
               {singleVehicle?.images?.map((image) => (
                 <button
                   key={image?.id}
@@ -74,7 +74,7 @@ const SingleVehicle = () => {
                   ) : (
                     <img
                       alt="gallery"
-                      className={`max-w-[12rem] object-cover h-full object-center block rounded-md border-2 hover:border-mainOrange`}
+                      className={`max-w-[4rem] my-4 xl:max-w-[12rem] object-cover h-full object-center block rounded-md border-2 hover:border-mainOrange`}
                       src={image?.url}
                     />
                   )}
@@ -114,7 +114,7 @@ const SingleVehicle = () => {
             <h1 className="text-xl font-medium title-font text-gray-800 lg:w-1/3 lg:mb-0">
               Features
             </h1>
-            <div className="flex max-[600px]:flex-col lg:gap-16 md:gap-4">
+            <div className="flex max-[600px]:flex-col xl:gap-16 md:gap-4">
               <div className="box-card">
                 <div className="card-heading mb-4">
                   <div className="bg-mainOrange px-3 py-2 rounded-md w-12 my-2">
