@@ -34,7 +34,7 @@ const EnterpriseSection = () => {
                 />
               </p>
             </AnimatedFromRight>
-            <button className="p-4 w-100 text-sm font-semibold text-white mt-12 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
+            <button className="btn-main w-full">
               <FormattedMessage
                 id="homePage.enterpriseSection.button"
                 defaultMessage="homePage.enterpriseSection.button"

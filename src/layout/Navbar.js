@@ -12,7 +12,6 @@ const Navbar = () => {
   const openMobileMenu = () => {
     setMenuToggle(!menuToggle);
   };
-
   return (
     <div className="bg-dark">
       <section className="container relative mx-auto py-4 z-10">
@@ -39,7 +38,7 @@ const Navbar = () => {
               className="text-white"
               onClick={context.switchLanguage}
             >
-              {context.locale === "ar" ? 'English': 'العربية'}
+              {context.currentLocal === "ar" ? 'English': 'العربية'}
             </button>
           </div>
           <button
@@ -61,7 +60,7 @@ const Navbar = () => {
           >
             {links.mainNav.map((link) => {
               return (
-                <div className={`w-full py-3 ${context.locale === "ar" ? 'text-right': 'text-left'}`} key={link.id}>
+                <div className={`w-full py-3 ${context.currentLocal === "ar" ? 'text-right': 'text-left'}`} key={link.id}>
                   <Link
                     className="block hover:text-mainOrange"
                     to={link.link}
@@ -75,10 +74,10 @@ const Navbar = () => {
               );
             })}
             <button 
-              className={`text-white py-3 ${context.locale === "ar" ? 'text-right': 'text-left'}`}
+              className={`text-white py-3 ${context.currentLocal === "ar" ? 'text-right': 'text-left'}`}
               onClick={context.switchLanguage}
-            >
-              {context.locale === "ar" ? 'English': 'العربية'}
+            > 
+              {context.currentLocal === "ar" ? 'English': 'العربية'}
             </button>
           </div>
         )}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AnimatedFadeIn from "./Animated/AnimatedFadeIn";
+import { FormattedMessage } from "react-intl";
 
 const Tabs = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -7,12 +8,12 @@ const Tabs = () => {
   const tabs = [
     {
       id: 1,
-      title: "With Us",
+      title: "tabs.withUs",
       content: require(`../assets/images/with-us.png`),
     },
     {
       id: 2,
-      title: "Without Us",
+      title: "tabs.withoutUs",
       content: require(`../assets/images/without-us.png`),
     },
   ];
@@ -30,7 +31,10 @@ const Tabs = () => {
                 className={toggleState === tab.id ? "tab tab-active" : "tab"}
                 onClick={() => toggleTab(tab.id)}
               >
-                {tab.title}
+                <FormattedMessage
+                  id={tab.title}
+                  defaultMessage={tab.title}
+                />
               </button>
             </AnimatedFadeIn>
           </div>

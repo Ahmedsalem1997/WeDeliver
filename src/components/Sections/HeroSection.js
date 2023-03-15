@@ -45,7 +45,7 @@ const HeroSection = () => {
                 />
               </p>
             </AnimatedFromLeft>
-            <button className="p-4 w-56 text-sm font-semibold mx-auto xl:mx-0 text-white mt-12 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
+            <button className="btn-main w-56">
               <FormattedMessage
                 id="homePage.heroSection.button"
                 defaultMessage="homePage.heroSection.button"

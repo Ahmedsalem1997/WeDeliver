@@ -1,25 +1,31 @@
 import Wrapper from "./context/Wrapper/Wrapper";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import DriveToOwn from "./pages/DriveToOwn";
 import { VehiclesProvider } from "./context/vehicles/VehiclesContext";
 import SingleVehicle from "./pages/SingleVehicle";
+import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <ScrollToTop />
       <Wrapper>
         <VehiclesProvider>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/ContactUs" element={<ContactUs />}/>
-            <Route path="/singlevehicle/:id" element={<SingleVehicle />} />
-            <Route path="/DriveToOwn" element={<DriveToOwn />} />
+            <Route path="/contact" element={<ContactUs />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/single-vehicle/:id" element={<SingleVehicle />} />
+            <Route path="/drive-to-own" element={<DriveToOwn />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </VehiclesProvider>
       </Wrapper>
-    </BrowserRouter>
+    </Router>
   )
 }
 

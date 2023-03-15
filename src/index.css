@@ -41,6 +41,10 @@
   @apply bg-darkBg;
 }
 
+.btn-main {
+  @apply p-4 text-sm font-semibold mx-auto xl:mx-0 text-white mt-12 bg-mainOrange rounded shadow-md border-2 border-none md:text-base;
+}
+
 .box-card {
   @apply flex flex-col justify-between my-4 lg:my-0 rounded-sm bg-white p-8 shadow-xl transition-shadow hover:shadow-lg w-[22rem];
 }

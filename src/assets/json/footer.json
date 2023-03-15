@@ -5,7 +5,7 @@
         {
           "id": "l1",
           "name": "aboutUs",
-          "link": "/"
+          "link": "/about"
         },
         {
           "id": "l2",
@@ -24,7 +24,7 @@
         {
           "id": "l4",
           "name": "contactUs",
-          "link": "/ContactUs"
+          "link": "/contact"
         },
         {
           "id": "l5",

@@ -70,8 +70,8 @@ const ContactUs = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-mainOrange border-0 py-2 px-8 focus:outline-none rounded-sm text-lg">
+              <div className="p-2 w-full flex mx-auto">
+                <button className="btn-main w-56">
                   <FormattedMessage
                     id="contact.submit"
                     defaultMessage="submit"

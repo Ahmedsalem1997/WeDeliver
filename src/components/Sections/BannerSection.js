@@ -1,7 +1,6 @@
 import { FormattedMessage } from "react-intl";
 
 const BannerSection = ({ page }) => {
-    console.log(page);
   return (
     <section className="lg:min-h-[24rem] overflow-hidden bg-[url(https://prod-website-backend-uploads.s3.eu-west-1.amazonaws.com/team_hero_ce893d83b8.jpg?auto=format&fit=max&w=1920&q=100)] bg-cover bg-center bg-no-repeat">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">

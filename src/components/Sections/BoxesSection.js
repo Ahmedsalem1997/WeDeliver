@@ -1,11 +1,12 @@
 import { FormattedMessage } from "react-intl";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AnimatedFadeIn from "../Animated/AnimatedFadeIn";
 import AnimatedFromBottom from "../Animated/AnimatedFromBottom";
 import AnimatedFromRight from "../Animated/AnimatedFromRight";
 import Tabs from "../Tabs";
 
 const BoxesSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mx-auto p-4 lg:pb-12">
       {/* tabs */}
@@ -124,14 +125,15 @@ const BoxesSection = () => {
               />
             </p>
           </AnimatedFadeIn>
-          <Link to="/DriveToOwn">
-            <button className="p-4 w-full text-sm font-semibold text-white my-4 bg-mainOrange rounded shadow-md border-2 border-none md:text-base">
-              <FormattedMessage
-                id="homePage.boxesSection.chooseBox.button"
-                defaultMessage="homePage.boxesSection.chooseBox.button"
-              />
-            </button>
-          </Link>
+          <button
+            onClick={() => navigate("/drive-to-own")}
+            className="btn-main w-full"
+          >
+            <FormattedMessage
+              id="homePage.boxesSection.chooseBox.button"
+              defaultMessage="homePage.boxesSection.chooseBox.button"
+            />
+          </button>
         </div>
         <div className="lg:w-1/3 self-center">
           <AnimatedFromRight>
