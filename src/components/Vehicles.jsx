@@ -15,7 +15,7 @@ const Vehicles = (props) => {
             <Link
               className="box-card justify-between"
               key={vehicle.id}
-              to={`/singlevehicle/${vehicle.vehicle.id}`}
+              to={`/single-vehicle/${vehicle.vehicle.id}`}
             >
               <div className="card-heading">
                 <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">
