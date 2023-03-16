@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
 const Footer = () => {
   const links = require("../assets/json/footer.json");
+  const navigate = useNavigate();
 
   return (
     <div className="bg-dark h-100">
@@ -11,6 +12,7 @@ const Footer = () => {
           <img
             src={require(`../assets/images/Secondary-LogoWhite.png`)}
             alt="WeDeliver"
+            onClick={() => navigate('/')}
             className="max-w-[10rem] mx-auto lg:mx-0"
           />
           <p className="text-center lg:text-left text-gray-400 leading-relaxed my-8 lg:rtl:text-right">

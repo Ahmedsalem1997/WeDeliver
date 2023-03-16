@@ -1,156 +1,167 @@
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
 import { FormattedMessage } from "react-intl";
-import BannerSection from './../components/Sections/BannerSection';
+import BannerSection from "./../components/Sections/BannerSection";
 
 const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <BannerSection page="contact"/>
-      <section className="text-gray-600 body-font relative">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              <FormattedMessage
-                id="contact.title"
-                defaultMessage="Contact Us"
-              />
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              <FormattedMessage
-                id="contact.content"
-                defaultMessage="Contact Us"
-              />
-            </p>
-          </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
-            <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-                    <FormattedMessage id="contact.name" defaultMessage="Name" />
+      <BannerSection page="contact" />
+
+      <section className="bg-gray-100">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+            <div className="lg:col-span-2 lg:py-12">
+              <p className="max-w-xl text-lg">
+                <FormattedMessage
+                  id="contact.subtitle"
+                  defaultMessage="contact.subtitle"
+                ></FormattedMessage>
+              </p>
+
+              <div className="mt-8">
+                <button className="text-2xl font-bold text-mainOrange">
+                  0151 475 4450
+                </button>
+
+                <address className="mt-2 not-italic">
+                  282 Kevin Brook, Imogeneborough, CA 58517
+                </address>
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+              <form action="" className="space-y-4">
+                <div>
+                  <label className="sr-only" for="name">
+                    <FormattedMessage
+                      id="contact.name"
+                      defaultMessage="contact.name"
+                    ></FormattedMessage>
                   </label>
                   <input
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Name"
                     type="text"
                     id="name"
-                    name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
-              </div>
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-                    <FormattedMessage
-                      id="contact.email"
-                      defaultMessage="email"
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label className="sr-only" for="email">
+                    <FormattedMessage id="contact.email" defaultMessage="contact.email">
+                    </FormattedMessage>
+                    </label>
+                    <input
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      placeholder="Email address"
+                      type="email"
+                      id="email"
                     />
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
+                  </div>
+
+                  <div>
+                    <label className="sr-only" for="phone">
+                    <FormattedMessage id="contact.phone" defaultMessage="contact.phone">
+                    </FormattedMessage>
+                    </label>
+                    <input
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      placeholder="Phone Number"
+                      type="tel"
+                      id="phone"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label htmlFor="message" className="leading-7 text-sm text-gray-600">
+
+                <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+                  <div>
+                    <input
+                      className="peer sr-only"
+                      id="option1"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <label
+                      for="option1"
+                      className="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                      tabindex="0"
+                    >
+                      <span className="text-sm font-medium"> Option 1 </span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <input
+                      className="peer sr-only"
+                      id="option2"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <label
+                      for="option2"
+                      className="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                      tabindex="0"
+                    >
+                      <span className="text-sm font-medium"> Option 2 </span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <input
+                      className="peer sr-only"
+                      id="option3"
+                      type="radio"
+                      tabindex="-1"
+                      name="option"
+                    />
+
+                    <label
+                      for="option3"
+                      className="block w-full rounded-lg border border-gray-200 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                      tabindex="0"
+                    >
+                      <span className="text-sm font-medium"> Option 3 </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="sr-only" for="message">
                     <FormattedMessage
                       id="contact.message"
-                      defaultMessage="message"
-                    />
+                      defaultMessage="contact.message"
+                    ></FormattedMessage>
                   </label>
+
                   <textarea
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Message"
+                    rows="8"
                     id="message"
-                    name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
-              </div>
-              <div className="p-2 w-full flex mx-auto">
-                <button className="btn-main w-56">
-                  <FormattedMessage
-                    id="contact.submit"
-                    defaultMessage="submit"
-                  />
-                </button>
-              </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a href="/" className="text-mainOrange">
-                  info@wedeliver.com
-                </a>
-                <p className="leading-normal my-5">
-                  49 Smith St.
-                  <br />
-                  Saint Cloud, MN 56301
-                </p>
-                <span className="inline-flex">
-                  <a href="/" className="text-gray-500">
-                    <svg
-                      fill="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-5 h-5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                    </svg>
-                  </a>
-                  <a href="/" className="ml-4 text-gray-500">
-                    <svg
-                      fill="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-5 h-5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                    </svg>
-                  </a>
-                  <a href="/" className="ml-4 text-gray-500">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-5 h-5"
-                      viewBox="0 0 24 24"
-                    >
-                      <rect
-                        width="20"
-                        height="20"
-                        x="2"
-                        y="2"
-                        rx="5"
-                        ry="5"
-                      ></rect>
-                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                  </a>
-                  <a href="/" className="ml-4 text-gray-500">
-                    <svg
-                      fill="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-5 h-5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                  </a>
-                </span>
-              </div>
+
+                <div className="mt-4">
+                  <button
+                    type="submit"
+                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                  >
+                    Send Enquiry
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );

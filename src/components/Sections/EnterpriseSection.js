@@ -1,6 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import AnimatedFadeIn from "../Animated/AnimatedFadeIn";
-import AnimatedFromRight from "../Animated/AnimatedFromRight";
+import AnimatedfromLeft from "../Animated/AnimatedFromLeft"
 
 const EnterpriseSection = () => {
   return (
@@ -14,7 +14,7 @@ const EnterpriseSection = () => {
             />
           </div>
           <div className="flex flex-col lg:w-2/5 self-center">
-            <AnimatedFromRight>
+            <AnimatedfromLeft>
               <h2 className="text-center text-gray-300 text-xl my-4 font-bold lg:text-xl lg:text-left lg:rtl:text-right">
                 <FormattedMessage
                   id="homePage.enterpriseSection.title"
@@ -33,7 +33,7 @@ const EnterpriseSection = () => {
                   defaultMessage="homePage.enterpriseSection.content"
                 />
               </p>
-            </AnimatedFromRight>
+            </AnimatedfromLeft>
             <button className="btn-main w-full">
               <FormattedMessage
                 id="homePage.enterpriseSection.button"
