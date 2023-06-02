@@ -3,14 +3,12 @@ import { useNavigate } from "react-router-dom";
 import AnimatedFadeIn from "../Animated/AnimatedFadeIn";
 import AnimatedFromBottom from "../Animated/AnimatedFromBottom";
 import AnimatedFromRight from "../Animated/AnimatedFromRight";
-import Tabs from "../Tabs";
 
 const BoxesSection = () => {
   const navigate = useNavigate();
   return (
     <div className="container mx-auto p-4 lg:pb-12">
-      {/* tabs */}
-      <Tabs />
+
       <AnimatedFadeIn>
         <h2 className="text-2xl font-bold text-center mt-16 lg:text-3xl leading-10 px-16">
           <FormattedMessage
