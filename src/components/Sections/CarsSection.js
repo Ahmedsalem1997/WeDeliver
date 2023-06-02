@@ -1,18 +1,27 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Vehicles from "../Vehicles";
-import VehiclesContext from "../../context/vehicles/VehiclesContext";
+import { getVehiclesResponse } from "../../providers/Service";
 
 const CarsSection = () => {
-  const { filteredCars, fetchVehicles } = useContext(VehiclesContext);
+  const [loading, setLoading] = useState(true)
+  const [cars, setCars] = useState([]);
+
+  const getCarsData = () => {
+    getVehiclesResponse().then((res) => {
+      if(!res.httpError) { 
+        setCars(res.data.cars)
+        setLoading(false)
+      }
+    })
+  }
 
   useEffect(() => {
-    fetchVehicles();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filteredCars]);
+    getCarsData()
+  }, [])
   
   return (
     <div className="lg:flex lg:justify-between">
-      <Vehicles cars={filteredCars} />  
+      <Vehicles cars={cars} loading={loading}/>  
     </div>
   );
 };

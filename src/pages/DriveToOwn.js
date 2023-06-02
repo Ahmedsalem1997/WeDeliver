@@ -1,32 +1,41 @@
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
 import { FormattedMessage } from "react-intl";
-import { useEffect, useContext } from "react";
-import VehiclesContext from "../context/vehicles/VehiclesContext";
+import { useEffect, useState } from "react";
 import CarsSection from "../components/Sections/CarsSection";
 import BikesSection from "../components/Sections/BikesSections";
 import DriveWithUs from "../components/Sections/DriveWithUs";
+import { getCities, getCountries } from "../providers/Service";
 
 const DriveToOwn = () => {
-  const {
-    countries,
-    countryId,
-    cities,
-    fetchCountries,
-    fetchCities,
-    countryChangeHandler,
-    cityChangehandler,
-  } = useContext(VehiclesContext);
+  const [countryOptions, setCountryOptions] = useState([]);
+  const [cityOptions, setCityOptions] = useState([]);
+
+  const fetchCountries = (id) => {
+    getCountries(id).then((res) => {
+      if(!res.httpError) {
+        setCountryOptions(res);
+      }
+    });
+  };
 
   useEffect(() => {
-    fetchCountries();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    fetchCountries()
+  }, [])
 
-  useEffect(() => {
-    fetchCities();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [countryId]);
+  
+  const handleCountryChange = (e) => {
+    fetchCities(e.target.value);
+  }
+
+  const fetchCities = (id) => {
+    getCities(id).then((res) => {
+      if(!res.httpError) {
+        setCityOptions(res);
+        
+      }
+    });
+  };
 
   return (
     <>
@@ -52,14 +61,15 @@ const DriveToOwn = () => {
           </h3>
           <div className="flex lg:justify-between space-s-5 items-center">
             <select
-              onChange={(e) => countryChangeHandler(e)}
+              // onChange={(e) => console.log(e.target.value)}
+              onChange={handleCountryChange}
               defaultValue="country"
               className="form-select navbar__language text-start bg-transparent border-0 text-black font-bold w-64 border-b-2 py-2"
             >
               <option className="text-black" value={"country"} disabled>
                 <FormattedMessage id="driveToOwn.country"></FormattedMessage>
               </option>
-              {countries.map((country) => (
+              {countryOptions && countryOptions.map((country) => (
                 <option
                   className="text-black"
                   value={country.id}
@@ -70,14 +80,14 @@ const DriveToOwn = () => {
               ))}
             </select>
             <select
-              onChange={(e) => cityChangehandler(e)}
+              onChange={(e) => console.log(e)}
               defaultValue="city"
               className="form-select navbar__language text-start bg-transparent border-0 text-black font-bold w-64 border-b-2 py-2"
             >
               <option className="text-black" value={"city"} disabled>
                 <FormattedMessage id="driveToOwn.city"></FormattedMessage>
               </option>
-              {cities.map((city) => (
+              {cityOptions && cityOptions.map((city) => (
                 <option className="text-black" value={city.id} key={city.id}>
                   {city.name_en}
                 </option>

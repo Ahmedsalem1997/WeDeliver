@@ -7,6 +7,7 @@ import { HiOutlineUserAdd } from "react-icons/hi";
 import { Skeleton } from "antd";
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
+import { getSingleVehicleData } from "../providers/Service";
 
 const SingleVehicle = () => {
   const [singleVehicle, setSingleVehicle] = useState({});
@@ -18,18 +19,17 @@ const SingleVehicle = () => {
   const params = useParams();
 
   const fetchSingleVehicle = () => {
-    fetch(
-      `https://fintech.services.wedeliverapp.com/api/v1/vehicle/${params.id}`
-    )
-      .then((response) => response.json())
-      .then((data) => setSingleVehicle(data));
+    getSingleVehicleData(params.id).then((res) => {
+      if(!res.httpError) {
+        setSingleVehicle(res)
+      }
+    })
   };
 
   useEffect(() => {
     fetchSingleVehicle();
     setLoading(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params.id]);
+  }, []);
 
   const changeImageHandler = (image) => {
     setFeaturedImage(image?.url);

@@ -1,13 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import VehiclesContext from "../context/vehicles/VehiclesContext";
 import { Skeleton } from "antd";
 
 const Vehicles = (props) => {
-  const { loading } = useContext(VehiclesContext);
   return (
     <>
-      {loading ? (
+      {props.loading ? (
             [...Array(3)].map((e, i) => (<div className="box-card min-h-[18rem]" key={i}><Skeleton active/></div>))
       ) : (
         <>
