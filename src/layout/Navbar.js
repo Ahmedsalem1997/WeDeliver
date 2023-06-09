@@ -1,14 +1,14 @@
 import { useState, useContext } from "react";
-import Logo from "../assets/images/logo.png";
+import LogoEnglish from "../assets/images/logo.png";
+import LogoArabic from "../assets/images/ArabicLogo.png";
 import { Context } from "../context/Wrapper/Wrapper";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
   const links = require("../assets/json/navbar.json");
   const context = useContext(Context);
   const [menuToggle, setMenuToggle] = useState(false);
-  const navigate = useNavigate();
 
   const openMobileMenu = () => {
     setMenuToggle(!menuToggle);
@@ -17,9 +17,9 @@ const Navbar = () => {
     <div className="bg-dark">
       <section className="container relative mx-auto py-4 z-10">
         <div className="flex items-center justify-between my-4">
-          <div className="z-30">
-            <img src={Logo} onClick={() => navigate('/')} alt="WeDeliver" id="logo" className="w-32" />
-          </div>
+          <Link className="z-30" to="/">
+            <img src={context.currentLocal === "ar" ? LogoArabic : LogoEnglish} alt="WeDeliver" id="logo" className="w-32" />
+          </Link>
           <div className="hidden items-center space-s-10 md:flex">
             {links.mainNav.map((link) => {
               return (
