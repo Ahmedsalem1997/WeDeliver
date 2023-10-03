@@ -13,26 +13,25 @@ const Vehicles = (props) => {
             <Link
               className="box-card justify-between"
               key={vehicle.id}
-              to={`/single-vehicle/${vehicle.vehicle.id}`}
+              to={`/single-vehicle/${vehicle?.vehicle?.id}`}
             >
               <div className="card-heading">
                 <p className="text-bold font-bold text-gray-800 text-left rtl:lg:text-right">
                   {
-                    vehicle.vehicle.manufacturer_model.manufacturer
-                      .manufacturer_name_en
+                    vehicle?.vehicle?.manufacturer_model?.manufacturer?.manufacturer_name_en
                   }{" "}
                   {
-                    vehicle.vehicle.manufacturer_model
-                      .manufacturer_model_name_ar
+                    vehicle?.vehicle?.manufacturer_model
+                      ?.manufacturer_model_name_ar
                   }
                 </p>
                 <p className="text-left rtl:lg:text-right text-gray-600">
-                  {vehicle.vehicle.production_year}
+                  {vehicle?.vehicle?.production_year}
                 </p>
               </div>
               <div className="card-body flex justify-center">
                 <img
-                  src={vehicle.vehicle.main_image.url}
+                  src={vehicle?.vehicle?.main_image.url}
                   className="icon-card__icon max-h-[150px] self-center my-2"
                   alt="carimage"
                 />
@@ -45,7 +44,7 @@ const Vehicles = (props) => {
                     alt="icon"
                   />
                   <p className="text-gray-600 font-medium">
-                    {vehicle.vehicle.transmission_obj.Value}
+                    {vehicle?.vehicle?.transmission_obj.Value}
                   </p>
                 </div>
                 <div>
@@ -56,7 +55,7 @@ const Vehicles = (props) => {
                       alt="icon"
                     />
                     <p className="text-gray-600 font-medium">
-                      {vehicle.vehicle.engine_size_obj.Value}
+                      {vehicle?.vehicle?.engine_size_obj?.Value}
                     </p>
                   </div>
                 </div>
@@ -68,7 +67,7 @@ const Vehicles = (props) => {
                       alt="icon"
                     />
                     <p className="text-gray-600 font-medium">
-                      {vehicle.vehicle_body_form.transport_type_name_en}
+                      {vehicle?.vehicle_body_form?.transport_type_name_en}
                     </p>
                   </div>
                 </div>

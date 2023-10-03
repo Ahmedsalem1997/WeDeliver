@@ -4,7 +4,7 @@ export const getCountries = async () => {
     let res;
 
     try {
-        let response = await (await GET(`https://fintech.services.wedeliverapp.com/api/v1/countries/`)).data ;
+        let response = await (await GET(`https://tamwheel.services.wedeliverapp.com/core/api/v1/countries/`)).data ;
         res = response;
 
     } catch (err) {
@@ -20,7 +20,7 @@ export const getCities = async (countryId) => {
     let res;
 
     try {
-        let response = await (await GET(`https://fintech.services.wedeliverapp.com/api/v1/cities/${countryId}`)).data ;
+        let response = await (await GET(`https://tamwheel.services.wedeliverapp.com/core/api/v1/cities/${countryId}`)).data ;
         res = response;
 
     } catch (err) {
@@ -41,7 +41,7 @@ export const getVehiclesResponse = async (countryId, cityId) => {
         order_by: "asc",
     }
     try {
-        let response = await (await POST(`https://fintech.services.wedeliverapp.com/api/v1/public/vehicles`, data)).data;
+        let response = await (await POST(`https://tamwheel.services.wedeliverapp.com/core/api/v1/public/vehicles`, data)).data;
         res = response
     } catch (err) {
         let error = err ;
@@ -54,7 +54,7 @@ export const getSingleVehicleData = async (vehicleId) => {
     let res;
 
     try {
-        let response = await (await GET(`https://fintech.services.wedeliverapp.com/api/v1/vehicle/${vehicleId}`)).data ;
+        let response = await (await GET(`https://tamwheel.services.wedeliverapp.com/core/api/v1/vehicle/${vehicleId}`)).data ;
         res = response;
 
     } catch (err) {
