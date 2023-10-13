@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import BannerSection from "../components/Sections/BannerSection";
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
@@ -38,12 +38,12 @@ const features = [
 ];
 
 const About = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <Navbar />
       <BannerSection page="about" />
-      <section>
+      {/* <section>
         <div className="mx-auto max-w-screen-2xl px-4 py-8 pt-12 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
             <div className="relative lg:py-16">
@@ -97,7 +97,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* bg image info section*/}
 
@@ -162,12 +162,14 @@ const About = () => {
               Our Values{" "}
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              These values of agility, collaboration, and ownership
+              Meaningful, Impactful Business
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              form the backbone of the WeDeliver team's culture, guiding our
-              behavior and driving our performance to achieve outstanding
-              results in the mobility and logistics industry.
+              At WeDeliver, we are driven by a vision of a dynamic and inclusive
+              future. Our mission is to empower individuals and businesses in
+              the ever-evolving gig economy by providing innovative mobility
+              solutions. We believe that our success should contribute
+              positively to the community and the environment.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

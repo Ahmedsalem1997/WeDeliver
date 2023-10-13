@@ -14,6 +14,11 @@
         },
         {
           "id": "l3",
+          "name": "impact",
+          "link": "/"
+        },
+        {
+          "id": "l4",
           "name": "press",
           "link": "/"
         }
@@ -52,7 +57,12 @@
         },
         {
           "id": "l9",
-          "name": "earningsSignUp",
+          "name": "investwithus",
+          "link": "/"
+        },
+        {
+          "id": "l10",
+          "name": "chooseYourVehicle",
           "link": "/"
         }
       ]
